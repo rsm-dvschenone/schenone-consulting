@@ -1,0 +1,47 @@
+---
+title: "Services & Pricing"
+---
+
+Every engagement starts the same way: we connect to your POS system, build out your dashboards, and get you comfortable with what you're seeing. From there, pick the level of ongoing service that fits your store.
+
+## One-time setup
+
+A single setup fee covers connecting securely to your POS (Clover or PAX), building your canonical dashboard suite, and validating the numbers against what you already know about your business. Cost depends on your POS system and how much historical data we're bringing in — **you'll get a fixed quote before anything starts, no surprises.**
+
+## Then, pick a monthly tier
+
+::: {.tier}
+### Core Dashboard
+Automated, always-current dashboards covering sales trends, margin by category, dead stock, and vendor cost tracking. Log in whenever you want the answer.
+
+**$99–149/mo**
+:::
+
+::: {.tier}
+### Core + Reporting
+Everything in Core, plus a scheduled summary — daily, weekly, or monthly — sent straight to your email. No login required to stay on top of your numbers.
+
+**$199–249/mo**
+:::
+
+::: {.tier}
+### Insights + AI
+Everything above, plus plain-English callouts on what changed and why ("beer margin dropped 4% this week, driven by a vendor price increase"), and automatic flags for unusual activity — sudden stockouts, discount patterns, voids worth a second look.
+
+**$299–399/mo**
+:::
+
+::: {.tier}
+### Predictive
+Demand forecasting and reorder-point recommendations, once we've built up enough history on your store to make it reliable. Available as an add-on for established clients.
+
+**$399–599/mo**
+:::
+
+## Why monthly, not a one-off project
+
+A dashboard built once and never touched again goes stale within a season — your product mix changes, your vendors change, your seasonality shifts. Every tier here is a maintained, always-refreshed pipeline, not a static file. That's what the monthly fee actually buys.
+
+**New clients:** ask about founding-customer pricing — reduced setup and introductory rates in exchange for feedback while we build out support for your specific POS system.
+
+[Get in touch](contact.qmd){.btn-cta}

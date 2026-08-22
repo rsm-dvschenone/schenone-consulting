@@ -1,0 +1,29 @@
+---
+title: "Why It Matters"
+---
+
+Owners of independent liquor stores and smoke shops usually know their business by feel — which shelves move, which customers come back, which weeks are busy. That instinct is real. But it misses things that only show up in the numbers, and those blind spots are usually where the money is.
+
+## Margin, not volume
+
+Your best-selling product by units is often not your most profitable one. Beer, wine, spirits, and tobacco carry very different margins — a fast-moving item can be quietly mediocre for your bottom line while a slower one is doing more work than you'd guess. Seeing margin by category, side by side with volume, is usually the single most eye-opening thing an owner sees the first time.
+
+## Dead stock
+
+Every dollar sitting in inventory that isn't turning over is a dollar you can't use elsewhere. Slow-moving stock hides in plain sight on a shelf — it doesn't show up on a register tape, only in a report that's actually looking for it.
+
+## Vendor cost creep
+
+Most stores buy from more than one distributor, and prices move gradually enough that a small, steady increase rarely gets noticed until it's already cost you real margin over a few months. Tracking vendor cost by SKU over time turns that into something you catch early, not something you discover in hindsight.
+
+## Stockouts on your best sellers
+
+Running out of a top performer is a lost sale you never see on any report — unless something is actually tracking your stock levels against what normally sells. Flagging this before it happens (not after) is the difference between a missed Tuesday and a missed holiday weekend.
+
+## Seasonality
+
+Liquor and smoke shop sales move hard around holidays, game days, and weather — patterns that are obvious in hindsight but easy to under- or over-order for in the moment. A year or more of history turns "I think it gets busy around then" into an actual plan.
+
+---
+
+These are the questions our dashboards are built to answer first — see the specific tiers on [Services & Pricing](services.qmd).

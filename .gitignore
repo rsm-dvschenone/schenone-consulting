@@ -1,0 +1,20 @@
+# secrets
+.env
+*.env
+/clients/*/.env
+
+# raw client/sample data — never committed
+*/fixtures/*.csv
+*/fixtures/*.json
+!*/fixtures/.gitkeep
+
+# python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+
+# quarto build cache (NOT /docs — that's the tracked Pages output)
+/website/.quarto/
+/website/_freeze/
+/website/_site/

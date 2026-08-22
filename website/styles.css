@@ -1,0 +1,119 @@
+:root {
+  --sc-navy: #0f2438;
+  --sc-teal: #1b7a72;
+  --sc-teal-dark: #145c56;
+  --sc-ink: #1c2a33;
+  --sc-muted: #5a6b74;
+  --sc-bg-soft: #f4f7f7;
+  --sc-border: #e1e7e7;
+}
+
+body {
+  color: var(--sc-ink);
+}
+
+.navbar {
+  background-color: var(--sc-navy) !important;
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+  color: #f4f7f7 !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffffff !important;
+}
+
+/* Hero */
+.hero {
+  padding: 3rem 0 2rem 0;
+  border-bottom: 1px solid var(--sc-border);
+  margin-bottom: 2rem;
+}
+
+.hero h1 {
+  font-weight: 700;
+  color: var(--sc-navy);
+  font-size: 2.1rem;
+}
+
+.hero h2 {
+  color: var(--sc-teal);
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-top: -0.25rem;
+}
+
+/* Content sections */
+.section {
+  padding: 1.5rem 0;
+}
+
+.section h2 {
+  color: var(--sc-navy);
+  font-weight: 600;
+  border-left: 4px solid var(--sc-teal);
+  padding-left: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+/* Pricing tiers */
+.tier {
+  background-color: var(--sc-bg-soft);
+  border: 1px solid var(--sc-border);
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.tier h3 {
+  color: var(--sc-teal-dark);
+  margin-top: 0;
+}
+
+/* CTA */
+.cta {
+  text-align: center;
+  padding: 2.5rem 0;
+}
+
+.btn-cta {
+  display: inline-block;
+  background-color: var(--sc-teal);
+  color: #ffffff !important;
+  padding: 0.6rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none !important;
+  transition: background-color 0.15s ease;
+}
+
+.btn-cta:hover {
+  background-color: var(--sc-teal-dark);
+}
+
+/* About page */
+.about-layout {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.about-photo {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+/* Contact */
+.contact-block {
+  background-color: var(--sc-bg-soft);
+  border: 1px solid var(--sc-border);
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+  display: inline-block;
+  margin-top: 1rem;
+}

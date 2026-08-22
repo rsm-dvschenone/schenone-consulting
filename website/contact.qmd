@@ -1,0 +1,14 @@
+---
+title: "Contact"
+---
+
+## Let's look at your data
+
+If you run an independent liquor store or smoke shop in the San Diego area and you're on a Clover or PAX system, reach out — a first conversation costs nothing, and it usually takes less than fifteen minutes to show you something in your own numbers you haven't seen before.
+
+<div class="contact-block">
+<strong>Email:</strong> <a href="mailto:hello@dominicschenone.com">hello@dominicschenone.com</a><br>
+<strong>Location:</strong> Ocean Beach, San Diego, CA
+</div>
+
+<!-- hello@dominicschenone.com is a placeholder — swap for the real business inbox once set up (internal/docs/01-feasibility-and-startup-costs.md) -->

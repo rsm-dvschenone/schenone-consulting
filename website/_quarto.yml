@@ -1,0 +1,31 @@
+project:
+  type: website
+  output-dir: ../docs
+
+website:
+  title: "Schenone Consulting"
+  site-url: "https://dominicschenone.com"
+  description: "Business intelligence for independent liquor stores & smoke shops."
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: services.qmd
+        text: Services & Pricing
+      - href: insights.qmd
+        text: Why It Matters
+      - href: about.qmd
+        text: About
+      - href: contact.qmd
+        text: Contact
+    right:
+      - icon: linkedin
+        href: https://www.linkedin.com/
+        aria-label: LinkedIn
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: false
+    page-layout: full

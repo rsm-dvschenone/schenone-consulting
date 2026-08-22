@@ -1,0 +1,40 @@
+---
+title: ""
+---
+
+::: {.hero}
+# Your POS system already knows what's wrong with your business.
+
+## Nobody's looked.
+
+Schenone Consulting builds automated dashboards and reporting for independent **liquor stores and smoke shops** — turning the sales data your POS system collects every day into decisions you can actually act on. No BI team, no spreadsheets, no learning curve. It just works, and it's always current.
+:::
+
+::: {.section}
+## Built for stores running Clover or PAX
+
+If your register is a **Clover** terminal or a **PAX**-based system, we connect directly to it. No new hardware, no changing how you ring up sales, no disrupting your day. We plug into what you already have.
+:::
+
+::: {.section}
+## What you'll actually see
+
+- **Which categories make you money — not just which sell the most.** Beer, wine, spirits, and tobacco carry very different margins. Volume lies; margin doesn't.
+- **What's dead weight in your inventory.** Cash tied up in stock that isn't moving, flagged automatically.
+- **When your distributor quietly raises prices.** Cost trends by vendor and SKU, tracked over time so you notice before it eats your margin.
+- **When you're about to run out of your best sellers.** Stockout risk on the products that actually drive your revenue.
+
+See the full breakdown on [Why It Matters](insights.qmd).
+:::
+
+::: {.section}
+## Simple, honest pricing
+
+Setup once, then a flat monthly fee — no long-term contract, no enterprise sales process. See [Services & Pricing](services.qmd).
+:::
+
+::: {.cta}
+### Ready to see what your own data looks like?
+
+[Get in touch](contact.qmd){.btn-cta}
+:::
