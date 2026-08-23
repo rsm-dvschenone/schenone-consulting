@@ -9,6 +9,13 @@ title: "About"
 
 I'm a Business Intelligence analyst working in renewable energy, where I build the ETL pipelines, automation, and dashboards that let a company actually see what its own data is telling it. I have a Bachelor's from UCLA and a Master's in Business Analytics from UCSD, and I've spent my career in Python, SQL, Power BI, and Power Query — the exact toolkit behind everything on this site.
 
+<div class="badge-row">
+<span class="badge-pill">UCLA</span>
+<span class="badge-pill">UCSD, MS Business Analytics</span>
+<span class="badge-pill">Python &middot; SQL &middot; Power BI</span>
+<span class="badge-pill">Ocean Beach, San Diego</span>
+</div>
+
 Independent liquor stores and smoke shops run on the same kind of POS data a Fortune 500 company pays a whole analytics team to interpret — margin by category, inventory turnover, vendor cost trends, seasonality. The difference is nobody's built it for them. That's the gap this consultancy exists to close: the same rigor, sized and priced for a business that's never had it before.
 
 I'm based in Ocean Beach, San Diego, and work directly with each store I take on — no account managers, no hand-offs, no generic templates pretending to be insight.

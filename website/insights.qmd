@@ -4,25 +4,98 @@ title: "Why It Matters"
 
 Owners of independent liquor stores and smoke shops usually know their business by feel — which shelves move, which customers come back, which weeks are busy. That instinct is real. But it misses things that only show up in the numbers, and those blind spots are usually where the money is.
 
+::: {.section}
 ## Margin, not volume
 
-Your best-selling product by units is often not your most profitable one. Beer, wine, spirits, and tobacco carry very different margins — a fast-moving item can be quietly mediocre for your bottom line while a slower one is doing more work than you'd guess. Seeing margin by category, side by side with volume, is usually the single most eye-opening thing an owner sees the first time.
+Your best-selling product by units is often not your most profitable one. Beer, wine, spirits, and tobacco carry very different margins — a fast-moving item can be quietly mediocre for your bottom line while a slower one is doing more work than you'd guess.
 
+<div class="viz-card">
+<div class="viz-legend">
+  <span class="viz-legend-item"><span class="viz-legend-swatch" style="background:var(--accent-blue)"></span>Share of volume</span>
+  <span class="viz-legend-item"><span class="viz-legend-swatch" style="background:var(--accent-orange)"></span>Share of gross margin</span>
+</div>
+<svg viewBox="0 0 640 300" role="img" aria-label="Grouped bar chart comparing each category's share of volume against its share of gross margin" style="width:100%; height:auto;">
+  <!-- gridlines + axis -->
+  <g class="viz-axis-text">
+    <line class="viz-gridline" x1="100" y1="34" x2="100" y2="288"/>
+    <line class="viz-gridline" x1="200" y1="34" x2="200" y2="288"/>
+    <line class="viz-gridline" x1="300" y1="34" x2="300" y2="288"/>
+    <line class="viz-gridline" x1="400" y1="34" x2="400" y2="288"/>
+    <line class="viz-gridline" x1="500" y1="34" x2="500" y2="288"/>
+    <line class="viz-gridline" x1="600" y1="34" x2="600" y2="288"/>
+    <text x="100" y="24" text-anchor="middle">0%</text>
+    <text x="200" y="24" text-anchor="middle">10%</text>
+    <text x="300" y="24" text-anchor="middle">20%</text>
+    <text x="400" y="24" text-anchor="middle">30%</text>
+    <text x="500" y="24" text-anchor="middle">40%</text>
+    <text x="600" y="24" text-anchor="middle">50%</text>
+  </g>
+
+  <!-- Beer -->
+  <text class="viz-cat-label" x="90" y="69" text-anchor="end">Beer</text>
+  <g class="viz-bar-group">
+    <path class="viz-bar viz-bar-volume" d="M100,40 H516 A4,4 0 0 1 520,44 V62 A4,4 0 0 1 516,66 H100 Z"><title>Beer — share of volume: 42%</title></path>
+    <text class="viz-value-label" x="528" y="57">42%</text>
+    <path class="viz-bar viz-bar-margin" d="M100,66 H336 A4,4 0 0 1 340,70 V88 A4,4 0 0 1 336,92 H100 Z"><title>Beer — share of gross margin: 24%</title></path>
+    <text class="viz-value-label" x="348" y="83">24%</text>
+  </g>
+
+  <!-- Wine -->
+  <text class="viz-cat-label" x="90" y="135" text-anchor="end">Wine</text>
+  <g class="viz-bar-group">
+    <path class="viz-bar viz-bar-volume" d="M100,106 H276 A4,4 0 0 1 280,110 V128 A4,4 0 0 1 276,132 H100 Z"><title>Wine — share of volume: 18%</title></path>
+    <text class="viz-value-label" x="288" y="123">18%</text>
+    <path class="viz-bar viz-bar-margin" d="M100,132 H316 A4,4 0 0 1 320,136 V154 A4,4 0 0 1 316,158 H100 Z"><title>Wine — share of gross margin: 22%</title></path>
+    <text class="viz-value-label" x="328" y="149">22%</text>
+  </g>
+
+  <!-- Spirits -->
+  <text class="viz-cat-label" x="90" y="201" text-anchor="end">Spirits</text>
+  <g class="viz-bar-group">
+    <path class="viz-bar viz-bar-volume" d="M100,172 H346 A4,4 0 0 1 350,176 V194 A4,4 0 0 1 346,198 H100 Z"><title>Spirits — share of volume: 25%</title></path>
+    <text class="viz-value-label" x="358" y="189">25%</text>
+    <path class="viz-bar viz-bar-margin" d="M100,198 H496 A4,4 0 0 1 500,202 V220 A4,4 0 0 1 496,224 H100 Z"><title>Spirits — share of gross margin: 40%</title></path>
+    <text class="viz-value-label" x="508" y="215">40%</text>
+  </g>
+
+  <!-- Other -->
+  <text class="viz-cat-label" x="90" y="267" text-anchor="end">Other</text>
+  <g class="viz-bar-group">
+    <path class="viz-bar viz-bar-volume" d="M100,238 H246 A4,4 0 0 1 250,242 V260 A4,4 0 0 1 246,264 H100 Z"><title>Other — share of volume: 15%</title></path>
+    <text class="viz-value-label" x="258" y="255">15%</text>
+    <path class="viz-bar viz-bar-margin" d="M100,264 H236 A4,4 0 0 1 240,268 V286 A4,4 0 0 1 236,290 H100 Z"><title>Other — share of gross margin: 14%</title></path>
+    <text class="viz-value-label" x="248" y="281">14%</text>
+  </g>
+</svg>
+<p class="viz-caption">Illustrative example, not client data — Spirits punches well above its volume share on margin, while Beer's margin share trails its volume share. Your actual chart is built from your own POS data.</p>
+</div>
+
+Seeing margin by category, side by side with volume, is usually the single most eye-opening thing an owner sees the first time.
+:::
+
+::: {.section}
 ## Dead stock
 
 Every dollar sitting in inventory that isn't turning over is a dollar you can't use elsewhere. Slow-moving stock hides in plain sight on a shelf — it doesn't show up on a register tape, only in a report that's actually looking for it.
+:::
 
+::: {.section}
 ## Vendor cost creep
 
 Most stores buy from more than one distributor, and prices move gradually enough that a small, steady increase rarely gets noticed until it's already cost you real margin over a few months. Tracking vendor cost by SKU over time turns that into something you catch early, not something you discover in hindsight.
+:::
 
+::: {.section}
 ## Stockouts on your best sellers
 
 Running out of a top performer is a lost sale you never see on any report — unless something is actually tracking your stock levels against what normally sells. Flagging this before it happens (not after) is the difference between a missed Tuesday and a missed holiday weekend.
+:::
 
+::: {.section}
 ## Seasonality
 
 Liquor and smoke shop sales move hard around holidays, game days, and weather — patterns that are obvious in hindsight but easy to under- or over-order for in the moment. A year or more of history turns "I think it gets busy around then" into an actual plan.
+:::
 
 ---
 

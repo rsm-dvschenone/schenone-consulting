@@ -8,6 +8,8 @@ title: ""
 ## Nobody's looked.
 
 Schenone Consulting builds automated dashboards and reporting for independent **liquor stores and smoke shops** — turning the sales data your POS system collects every day into decisions you can actually act on. No BI team, no spreadsheets, no learning curve. It just works, and it's always current.
+
+[See what you'd actually see &rarr;](insights.qmd){.btn-cta}
 :::
 
 ::: {.section}
@@ -19,12 +21,43 @@ If your register is a **Clover** terminal or a **PAX**-based system, we connect 
 ::: {.section}
 ## What you'll actually see
 
-- **Which categories make you money — not just which sell the most.** Beer, wine, spirits, and tobacco carry very different margins. Volume lies; margin doesn't.
-- **What's dead weight in your inventory.** Cash tied up in stock that isn't moving, flagged automatically.
-- **When your distributor quietly raises prices.** Cost trends by vendor and SKU, tracked over time so you notice before it eats your margin.
-- **When you're about to run out of your best sellers.** Stockout risk on the products that actually drive your revenue.
+::: {.feature-grid}
 
-See the full breakdown on [Why It Matters](insights.qmd).
+<div class="feature-card">
+<div class="feature-icon">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><rect x="4" y="12" width="4" height="8"/><rect x="10" y="7" width="4" height="13"/><rect x="16" y="3" width="4" height="17"/></svg>
+</div>
+<h3>Margin, not just volume</h3>
+<p>Beer, wine, spirits, and tobacco carry very different margins. Volume lies; margin doesn't — see which categories actually make you money.</p>
+</div>
+
+<div class="feature-card">
+<div class="feature-icon">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8 12 3 3 8v8l9 5 9-5V8Z"/><path d="M3 8l9 5 9-5"/><path d="M12 13v8"/></svg>
+</div>
+<h3>Dead weight in inventory</h3>
+<p>Cash tied up in stock that isn't moving, flagged automatically instead of hiding in plain sight on a shelf.</p>
+</div>
+
+<div class="feature-card">
+<div class="feature-icon">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 7-8"/><path d="M14 7h6v6"/></svg>
+</div>
+<h3>Vendor cost creep</h3>
+<p>Cost trends by distributor and SKU, tracked over time, so a quiet price increase gets caught before it eats your margin.</p>
+</div>
+
+<div class="feature-card">
+<div class="feature-icon">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4"/><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/><path d="M12 17h.01"/></svg>
+</div>
+<h3>Stockouts on best sellers</h3>
+<p>Running out of a top performer is a lost sale you'd never otherwise see — flagged before it happens, not after.</p>
+</div>
+
+:::
+
+See the full breakdown, with real numbers, on [Why It Matters](insights.qmd).
 :::
 
 ::: {.section}

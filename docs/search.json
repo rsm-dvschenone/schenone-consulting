@@ -1,0 +1,135 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Your POS system already knows what’s wrong with your business.",
+    "section": "",
+    "text": "Schenone Consulting builds automated dashboards and reporting for independent liquor stores and smoke shops — turning the sales data your POS system collects every day into decisions you can actually act on. No BI team, no spreadsheets, no learning curve. It just works, and it’s always current.\nSee what you’d actually see →"
+  },
+  {
+    "objectID": "index.html#nobodys-looked.",
+    "href": "index.html#nobodys-looked.",
+    "title": "Your POS system already knows what’s wrong with your business.",
+    "section": "",
+    "text": "Schenone Consulting builds automated dashboards and reporting for independent liquor stores and smoke shops — turning the sales data your POS system collects every day into decisions you can actually act on. No BI team, no spreadsheets, no learning curve. It just works, and it’s always current.\nSee what you’d actually see →"
+  },
+  {
+    "objectID": "index.html#built-for-stores-running-clover-or-pax",
+    "href": "index.html#built-for-stores-running-clover-or-pax",
+    "title": "Your POS system already knows what’s wrong with your business.",
+    "section": "Built for stores running Clover or PAX",
+    "text": "Built for stores running Clover or PAX\nIf your register is a Clover terminal or a PAX-based system, we connect directly to it. No new hardware, no changing how you ring up sales, no disrupting your day. We plug into what you already have."
+  },
+  {
+    "objectID": "index.html#what-youll-actually-see",
+    "href": "index.html#what-youll-actually-see",
+    "title": "Your POS system already knows what’s wrong with your business.",
+    "section": "What you’ll actually see",
+    "text": "What you’ll actually see\n\n\n\n\n\n\n\n\nMargin, not just volume\n\n\nBeer, wine, spirits, and tobacco carry very different margins. Volume lies; margin doesn’t — see which categories actually make you money.\n\n\n\n\n\n\n\n\n\nDead weight in inventory\n\n\nCash tied up in stock that isn’t moving, flagged automatically instead of hiding in plain sight on a shelf.\n\n\n\n\n\n\n\n\n\nVendor cost creep\n\n\nCost trends by distributor and SKU, tracked over time, so a quiet price increase gets caught before it eats your margin.\n\n\n\n\n\n\n\n\n\nStockouts on best sellers\n\n\nRunning out of a top performer is a lost sale you’d never otherwise see — flagged before it happens, not after.\n\n\n\nSee the full breakdown, with real numbers, on Why It Matters."
+  },
+  {
+    "objectID": "index.html#simple-honest-pricing",
+    "href": "index.html#simple-honest-pricing",
+    "title": "Your POS system already knows what’s wrong with your business.",
+    "section": "Simple, honest pricing",
+    "text": "Simple, honest pricing\nSetup once, then a flat monthly fee — no long-term contract, no enterprise sales process. See Services & Pricing."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "I’m a Business Intelligence analyst working in renewable energy, where I build the ETL pipelines, automation, and dashboards that let a company actually see what its own data is telling it. I have a Bachelor’s from UCLA and a Master’s in Business Analytics from UCSD, and I’ve spent my career in Python, SQL, Power BI, and Power Query — the exact toolkit behind everything on this site.\n\nUCLA UCSD, MS Business Analytics Python · SQL · Power BI Ocean Beach, San Diego\n\nIndependent liquor stores and smoke shops run on the same kind of POS data a Fortune 500 company pays a whole analytics team to interpret — margin by category, inventory turnover, vendor cost trends, seasonality. The difference is nobody’s built it for them. That’s the gap this consultancy exists to close: the same rigor, sized and priced for a business that’s never had it before.\nI’m based in Ocean Beach, San Diego, and work directly with each store I take on — no account managers, no hand-offs, no generic templates pretending to be insight.\nGet in touch"
+  },
+  {
+    "objectID": "about.html#dom-schenone",
+    "href": "about.html#dom-schenone",
+    "title": "About",
+    "section": "",
+    "text": "I’m a Business Intelligence analyst working in renewable energy, where I build the ETL pipelines, automation, and dashboards that let a company actually see what its own data is telling it. I have a Bachelor’s from UCLA and a Master’s in Business Analytics from UCSD, and I’ve spent my career in Python, SQL, Power BI, and Power Query — the exact toolkit behind everything on this site.\n\nUCLA UCSD, MS Business Analytics Python · SQL · Power BI Ocean Beach, San Diego\n\nIndependent liquor stores and smoke shops run on the same kind of POS data a Fortune 500 company pays a whole analytics team to interpret — margin by category, inventory turnover, vendor cost trends, seasonality. The difference is nobody’s built it for them. That’s the gap this consultancy exists to close: the same rigor, sized and priced for a business that’s never had it before.\nI’m based in Ocean Beach, San Diego, and work directly with each store I take on — no account managers, no hand-offs, no generic templates pretending to be insight."
+  },
+  {
+    "objectID": "services.html",
+    "href": "services.html",
+    "title": "Services & Pricing",
+    "section": "",
+    "text": "Every engagement starts the same way: we connect to your POS system, build out your dashboards, and get you comfortable with what you’re seeing. From there, pick the level of ongoing service that fits your store."
+  },
+  {
+    "objectID": "services.html#one-time-setup",
+    "href": "services.html#one-time-setup",
+    "title": "Services & Pricing",
+    "section": "One-time setup",
+    "text": "One-time setup\nA single setup fee covers connecting securely to your POS (Clover or PAX), building your canonical dashboard suite, and validating the numbers against what you already know about your business. Cost depends on your POS system and how much historical data we’re bringing in — you’ll get a fixed quote before anything starts, no surprises."
+  },
+  {
+    "objectID": "services.html#then-pick-a-monthly-tier",
+    "href": "services.html#then-pick-a-monthly-tier",
+    "title": "Services & Pricing",
+    "section": "Then, pick a monthly tier",
+    "text": "Then, pick a monthly tier\n\nCore Dashboard\nAutomated, always-current dashboards covering sales trends, margin by category, dead stock, and vendor cost tracking. Log in whenever you want the answer.\n$99–149/mo\n\n\nCore + Reporting\nEverything in Core, plus a scheduled summary — daily, weekly, or monthly — sent straight to your email. No login required to stay on top of your numbers.\n$199–249/mo\n\n\nInsights + AI\nEverything above, plus plain-English callouts on what changed and why (“beer margin dropped 4% this week, driven by a vendor price increase”), and automatic flags for unusual activity — sudden stockouts, discount patterns, voids worth a second look.\n$299–399/mo\n\n\nPredictive\nDemand forecasting and reorder-point recommendations, once we’ve built up enough history on your store to make it reliable. Available as an add-on for established clients.\n$399–599/mo"
+  },
+  {
+    "objectID": "services.html#why-monthly-not-a-one-off-project",
+    "href": "services.html#why-monthly-not-a-one-off-project",
+    "title": "Services & Pricing",
+    "section": "Why monthly, not a one-off project",
+    "text": "Why monthly, not a one-off project\nA dashboard built once and never touched again goes stale within a season — your product mix changes, your vendors change, your seasonality shifts. Every tier here is a maintained, always-refreshed pipeline, not a static file. That’s what the monthly fee actually buys.\nNew clients: ask about founding-customer pricing — reduced setup and introductory rates in exchange for feedback while we build out support for your specific POS system.\nGet in touch"
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "If you run an independent liquor store or smoke shop in the San Diego area and you’re on a Clover or PAX system, reach out — a first conversation costs nothing, and it usually takes less than fifteen minutes to show you something in your own numbers you haven’t seen before.\n\nEmail: hello@dominicschenone.com Location: Ocean Beach, San Diego, CA"
+  },
+  {
+    "objectID": "contact.html#lets-look-at-your-data",
+    "href": "contact.html#lets-look-at-your-data",
+    "title": "Contact",
+    "section": "",
+    "text": "If you run an independent liquor store or smoke shop in the San Diego area and you’re on a Clover or PAX system, reach out — a first conversation costs nothing, and it usually takes less than fifteen minutes to show you something in your own numbers you haven’t seen before.\n\nEmail: hello@dominicschenone.com Location: Ocean Beach, San Diego, CA"
+  },
+  {
+    "objectID": "insights.html",
+    "href": "insights.html",
+    "title": "Why It Matters",
+    "section": "",
+    "text": "Owners of independent liquor stores and smoke shops usually know their business by feel — which shelves move, which customers come back, which weeks are busy. That instinct is real. But it misses things that only show up in the numbers, and those blind spots are usually where the money is.\nThese are the questions our dashboards are built to answer first — see the specific tiers on Services & Pricing."
+  },
+  {
+    "objectID": "insights.html#margin-not-volume",
+    "href": "insights.html#margin-not-volume",
+    "title": "Why It Matters",
+    "section": "Margin, not volume",
+    "text": "Margin, not volume\nYour best-selling product by units is often not your most profitable one. Beer, wine, spirits, and tobacco carry very different margins — a fast-moving item can be quietly mediocre for your bottom line while a slower one is doing more work than you’d guess.\n\n\nShare of volume Share of gross margin\n\n\n\n       0% 10% 20% 30% 40% 50% \n\nBeer  \n\nBeer — share of volume: 42%\n\n 42% \n\nBeer — share of gross margin: 24%\n\n 24% \n\nWine  \n\nWine — share of volume: 18%\n\n 18% \n\nWine — share of gross margin: 22%\n\n 22% \n\nSpirits  \n\nSpirits — share of volume: 25%\n\n 25% \n\nSpirits — share of gross margin: 40%\n\n 40% \n\nOther  \n\nOther — share of volume: 15%\n\n 15% \n\nOther — share of gross margin: 14%\n\n 14% \n\n\nIllustrative example, not client data — Spirits punches well above its volume share on margin, while Beer’s margin share trails its volume share. Your actual chart is built from your own POS data.\n\n\nSeeing margin by category, side by side with volume, is usually the single most eye-opening thing an owner sees the first time."
+  },
+  {
+    "objectID": "insights.html#dead-stock",
+    "href": "insights.html#dead-stock",
+    "title": "Why It Matters",
+    "section": "Dead stock",
+    "text": "Dead stock\nEvery dollar sitting in inventory that isn’t turning over is a dollar you can’t use elsewhere. Slow-moving stock hides in plain sight on a shelf — it doesn’t show up on a register tape, only in a report that’s actually looking for it."
+  },
+  {
+    "objectID": "insights.html#vendor-cost-creep",
+    "href": "insights.html#vendor-cost-creep",
+    "title": "Why It Matters",
+    "section": "Vendor cost creep",
+    "text": "Vendor cost creep\nMost stores buy from more than one distributor, and prices move gradually enough that a small, steady increase rarely gets noticed until it’s already cost you real margin over a few months. Tracking vendor cost by SKU over time turns that into something you catch early, not something you discover in hindsight."
+  },
+  {
+    "objectID": "insights.html#stockouts-on-your-best-sellers",
+    "href": "insights.html#stockouts-on-your-best-sellers",
+    "title": "Why It Matters",
+    "section": "Stockouts on your best sellers",
+    "text": "Stockouts on your best sellers\nRunning out of a top performer is a lost sale you never see on any report — unless something is actually tracking your stock levels against what normally sells. Flagging this before it happens (not after) is the difference between a missed Tuesday and a missed holiday weekend."
+  },
+  {
+    "objectID": "insights.html#seasonality",
+    "href": "insights.html#seasonality",
+    "title": "Why It Matters",
+    "section": "Seasonality",
+    "text": "Seasonality\nLiquor and smoke shop sales move hard around holidays, game days, and weather — patterns that are obvious in hindsight but easy to under- or over-order for in the moment. A year or more of history turns “I think it gets busy around then” into an actual plan."
+  }
+]
