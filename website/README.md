@@ -54,7 +54,7 @@ Quarto prints a warning that it's "refusing to remove docs/site_libs". That's ex
 
 **Decision (2026-09-26):** keep using the existing GitHub account (`rsm-dvschenone`) and the existing repo `Doms-Chill-Site`, and keep the repo **public** (free plan). No transfer needed. This local repo has its own separate history and **no remote yet**, so the plan is: rename the old repo, push this repo over it, and confirm the Pages and DNS settings.
 
-**Public means** everything in the repo, `internal/docs/` included (pricing, tax, strategy), is readable by anyone. To lock it down later: GitHub Pro (about $4/mo), then Settings → Danger Zone → change visibility to Private. Pages keeps running on Pro, but anything already cloned stays out there.
+**Public means** everything in this repo is readable by anyone. On 2026-09-27 the business material (`internal/`, `product/`, `clients/`, tests, and the planning README) moved to the **private** repo `rsm-dvschenone/schenone-consulting-internal`, so this repo now holds only the website. Nothing confidential belongs here: no pricing, client data, credentials, or unapproved client work.
 
 ### Step 1: Commit locally ✅ done
 
