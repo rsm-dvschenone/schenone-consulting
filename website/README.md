@@ -113,13 +113,14 @@ dig +short www.dominicschenone.com      # should show rsm-dvschenone.github.io
 
 - [ ] `https://dominicschenone.com` loads with a padlock, and `http://` and `www.` both redirect to it
 - [ ] All five pages work from the nav, and no old "Why It Matters" page is reachable
-- [ ] The dark-mode toggle (top right) works
 - [ ] It looks right on a phone
 - [ ] The contact email works (see below)
 
-### Before announcing: set up the real inbox
+### Business email ✅ set up 2026-09-27
 
-`hello@dominicschenone.com` is still a placeholder. It appears in `contact.qmd` and in the footer in `_quarto.yml`. The quickest option is **Cloudflare → Email → Email Routing**, which is free: forward `hello@` to your personal inbox. If you'd rather use a different address, change both files, run `quarto render`, commit, and push.
+Microsoft 365 through GoDaddy. The mailbox is `dominic@dominicschenone.com`, and **`info@dominicschenone.com` is an alias** on it (free, same inbox). The site shows `info@`, in `contact.qmd` and the footer in `_quarto.yml`. Sign-in is federated to GoDaddy (`sso.godaddy.com`), with Duo for two-factor auth.
+
+The email DNS records live in **Cloudflare**, not GoDaddy: MX → `dominicschenone-com.mail.protection.outlook.com`, TXT `MS=ms45461012`, SPF TXT `v=spf1 include:secureserver.net -all`, and CNAME `autodiscover` → `autodiscover.outlook.com`. The CNAME **must stay DNS only** (grey cloud), or Outlook's automatic setup breaks. Never switch the nameservers back to GoDaddy; that would take down both the site and email.
 
 ---
 

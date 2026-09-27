@@ -18,8 +18,8 @@ subtitle: "Whether it's a website, a dashboard, a stubborn integration, or a pil
 
   <div class="contact-card">
     <p class="eyebrow">Email</p>
-    <a class="email" href="mailto:hello@dominicschenone.com">hello@dominicschenone.com</a>
-    <a class="btn-cta" href="mailto:hello@dominicschenone.com">Send an email</a>
+    <a class="email" href="mailto:info@dominicschenone.com">info@dominicschenone.com</a>
+    <a class="btn-cta" href="mailto:info@dominicschenone.com">Send an email</a>
     <hr>
     <p class="eyebrow">Based in</p>
     <p>Ocean Beach, San Diego, CA<br>Remote clients welcome</p>
@@ -27,4 +27,4 @@ subtitle: "Whether it's a website, a dashboard, a stubborn integration, or a pil
 </div>
 ```
 
-<!-- hello@dominicschenone.com is a placeholder — swap for the real business inbox once set up (internal/docs/01-feasibility-and-startup-costs.md). Also used in _quarto.yml page-footer. -->
+<!-- info@ is an alias on the dominic@dominicschenone.com Microsoft 365 mailbox (via GoDaddy). Also used in _quarto.yml page-footer. -->

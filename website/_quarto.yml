@@ -25,7 +25,7 @@ website:
         text: Contact
   page-footer:
     left: "© 2026 Schenone Consulting · Web, BI & data engineering"
-    right: "Ocean Beach, San Diego · [hello@dominicschenone.com](mailto:hello@dominicschenone.com)"
+    right: "Ocean Beach, San Diego · [info@dominicschenone.com](mailto:info@dominicschenone.com)"
 
 format:
   html:
