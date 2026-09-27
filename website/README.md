@@ -152,6 +152,16 @@ Microsoft 365 through GoDaddy. The mailbox is `dominic@dominicschenone.com`, and
 
 The email DNS records live in **Cloudflare**, not GoDaddy: MX → `dominicschenone-com.mail.protection.outlook.com`, TXT `MS=ms45461012`, SPF TXT `v=spf1 include:secureserver.net -all`, and CNAME `autodiscover` → `autodiscover.outlook.com`. The CNAME **must stay DNS only** (grey cloud), or Outlook's automatic setup breaks. Never switch the nameservers back to GoDaddy; that would take down both the site and email.
 
+### Email & DNS security ✅ 2026-09-27
+
+| Setting | Where | Value / state |
+|---|---|---|
+| **DMARC** | Cloudflare TXT `_dmarc` (added via Email → DMARC Management) | `v=DMARC1; p=none; rua=…@dmarc-reports.cloudflare.net`. Monitor-only for now; **tighten to `p=quarantine` around mid-October 2026** once the reports show only legitimate mail |
+| **DKIM** | Cloudflare CNAMEs `selector1._domainkey` / `selector2._domainkey` → `selectorN-dominicschenone-com._domainkey.NETORG21058736.a-v1.dkim.mail.microsoft` (**DNS only**) | Keys created in security.microsoft.com → Email authentication → DKIM; signing toggle enabled there once Microsoft's check syncs |
+| **SPF** | Cloudflare TXT `@` | `v=spf1 include:secureserver.net -all` (chains to `spf.protection.outlook.com`) |
+| **DNSSEC** | Enabled in Cloudflare (DNS → Settings); DS record added at GoDaddy (DNSSEC) | Key tag 2371, alg 13, digest type 2. If Cloudflare ever rotates the key or DNSSEC is turned off, **update or remove the DS at GoDaddy first**, or the domain stops resolving |
+| **HTTPS** | Cloudflare SSL/TLS | Mode **Full** (not strict: GitHub has no origin cert while proxied), Always Use HTTPS on, Automatic HTTPS Rewrites on, minimum TLS 1.2. HSTS intentionally off for now |
+
 ---
 
 ## What got stripped from the original site
