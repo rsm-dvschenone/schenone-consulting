@@ -5,9 +5,11 @@ Built with [Quarto](https://quarto.org). Source pages are the `.qmd` files in th
 | File | What it is |
 |---|---|
 | `index.qmd`, `services.qmd`, `approach.qmd`, `about.qmd`, `contact.qmd` | Pages (mostly raw HTML blocks using the classes in `styles.css`) |
-| `styles.css` | Design tokens (light on `:root`, dark on `body.quarto-dark`) + all components |
-| `fonts.html` | Google Fonts: Instrument Serif (display), Inter (body), JetBrains Mono (labels) |
-| `reveal.html` | Small scroll-in animation script; page is fully visible without it |
+| `work.qmd`, `work/`, `_work-listing.ejs`, `_extensions/project/`, `_templates/project/` | Work page and case studies (see "Adding a project") |
+| `styles.css` | Dark-only design tokens on `:root` + all components (theme is `darkly` only) |
+| `fonts.html` | Head include: Geist + Geist Mono, favicon/iPhone icon links, and the cache-busted `/styles.css?v=` link (root-relative so `work/<slug>/` pages load it) |
+| `reveal.html` | Path labels, click-to-load project embeds, scroll-in animation; pages are fully visible without it |
+| `images/og-card.png`, `apple-touch-icon.png` | Link-preview card (1200×630) and iPhone home-screen icon |
 
 ## Day-to-day workflow
 
