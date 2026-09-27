@@ -24,51 +24,36 @@ Quarto prints a warning that it's "refusing to remove docs/site_libs". That's ex
 
 ---
 
-## Going live: transfer the old repo and publish
+## Going live: publish from the existing account
 
-The old site lives in `rsm-dvschenone/Doms-Chill-Site` on the school-affiliated GitHub account. This local repo has its own separate history and **no remote yet**. The plan: move the old repo to your personal account, replace its contents with this repo, and point Pages and DNS at it.
+**Decision (2026-09-26):** keep using the existing GitHub account (`rsm-dvschenone`) and the existing repo `Doms-Chill-Site`, and keep the repo **public** (free plan). No transfer needed. This local repo has its own separate history and **no remote yet**, so the plan is: rename the old repo, push this repo over it, and confirm the Pages and DNS settings.
 
-### Step 0: Decide public vs. private (this affects cost)
+**Public means** everything in the repo, `internal/docs/` included (pricing, tax, strategy), is readable by anyone. To lock it down later: GitHub Pro (about $4/mo), then Settings → Danger Zone → change visibility to Private. Pages keeps running on Pro, but anything already cloned stays out there.
 
-This repo holds more than the site. It also has `internal/docs/` (pricing, tax, and strategy notes), `product/` (connector code), and `clients/`.
+### Step 1: Commit locally ✅ done
 
-- **GitHub Pages on a *private* repo requires a paid plan** (GitHub Pro, about $4/mo). On the free plan, Pages only works on public repos, and making a Pages repo private unpublishes the site.
-- A **public** repo would expose all of the internal material above to anyone.
+### Step 2: Secure the account and connect WSL
 
-**Recommended:** GitHub Pro plus a private repo. It's the least work, and everything stays together. (Alternative: a free public repo containing only `website/` and `docs/`, with the business material in a separate private repo. More setup, so only worth it if you want to avoid the $4/mo.)
-
-### Step 1: Commit the current work locally (WSL)
-
-```bash
-cd ~/"Dom's Side Projects/Schenone Consulting"
-git status                      # sanity check: no .env or client data listed
-git add -A
-git commit -m "Reposition site: web, BI & data engineering; full visual redesign"
-```
-
-### Step 2: Prepare your personal GitHub account
-
-1. Sign in to (or create) your **personal** GitHub account and turn on two-factor authentication (Settings → Password and authentication).
-2. If going private, upgrade to **GitHub Pro** (Settings → Billing and plans) **before** step 4.
-3. Set up authentication from WSL:
+1. Sign in as `rsm-dvschenone`. Under **Settings → Emails**, add your personal email (e.g. Gmail) and make it the **primary** address. If the school email is ever deactivated, a school-only account can't reset its password, and you'd lose control of the repo and the domain setup.
+2. Under **Settings → Password and authentication**, turn on two-factor authentication and save the recovery codes somewhere safe.
+3. Optional: rename the account to something business-appropriate under **Settings → Account → Change username**. If you do, the `www` CNAME in step 7 must change to the new `<username>.github.io`.
+4. Set up authentication from WSL:
    ```bash
    sudo apt update && sudo apt install gh -y
-   gh auth login                 # choose GitHub.com → HTTPS → login with a web browser
+   gh auth login                 # GitHub.com → HTTPS → login with a web browser
    gh auth setup-git
    ```
 
-### Step 3: Transfer the old repo from the school account
+### Step 3: Note the current Pages settings
 
-1. Sign in to the **school account** (`rsm-dvschenone`) and open `Doms-Chill-Site`.
-2. Before you transfer, note two things in **Settings → Pages**: the **branch** Pages publishes from (`main` or `master`) and the **custom domain** field.
-3. Go to **Settings → General → Danger Zone → Transfer ownership**. Enter your personal username, type the repo name to confirm, and click **I understand, transfer this repository**.
-4. GitHub emails your **personal** account a transfer request. Accept it; the link expires after a day.
-   - If the repo sits under a school **organization** rather than the `rsm-dvschenone` user, you need owner rights in that org. If you don't have them, skip the transfer: create a new repo in step 4 instead, and **remove the custom domain from the old repo's Pages settings first**, or GitHub will say the domain is already taken.
+Open `Doms-Chill-Site` → **Settings → Pages** and write down:
 
-### Step 4: Rename and set visibility (on your personal account)
+- the **branch** it publishes from (`main` or `master`), and the folder (`/docs` or root)
+- the **custom domain** field (should be `dominicschenone.com`)
 
-1. Open the transferred repo → **Settings → General → Repository name**. Rename it to something like `schenone-consulting` (it holds the whole business, not just the site).
-2. **Current decision (2026-09-26): leave it Public for now** (free plan). Everything in the repo, `internal/docs/` included, is visible to anyone. To lock it down later, upgrade to Pro, then change visibility in the **Danger Zone** to **Private**. Pages keeps running, but anything already cloned stays out there.
+### Step 4: Rename the repo
+
+**Settings → General → Repository name** → `schenone-consulting` (it holds the whole business, not just the site). GitHub redirects the old URL automatically.
 
 ### Step 5: Push this repo over the old content
 
@@ -76,7 +61,7 @@ The old repo's history is unrelated to this one, so this is a force-push. First,
 
 ```bash
 cd ~/"Dom's Side Projects/Schenone Consulting"
-git remote add origin https://github.com/<your-username>/schenone-consulting.git
+git remote add origin https://github.com/rsm-dvschenone/schenone-consulting.git
 git fetch origin
 
 # Keep the old site's history on a branch. Use origin/master if that's what step 3 showed.
@@ -93,7 +78,7 @@ If the old default branch was `master`, go to **Settings → General → Default
 In the repo, go to **Settings → Pages**:
 
 1. **Source:** Deploy from a branch → Branch **`main`**, folder **`/docs`** → Save.
-2. **Custom domain:** `dominicschenone.com` → Save. (The `docs/CNAME` file already contains this, but check the field isn't blank after the transfer.)
+2. **Custom domain:** `dominicschenone.com` → Save. (The `docs/CNAME` file already contains this, but check the field isn't blank.)
 3. Wait for the DNS check to pass (step 7), then tick **Enforce HTTPS**. The certificate can take up to about an hour to appear.
 4. **Verify the domain** so no one else can claim it: your profile → **Settings → Pages → Add a domain**. GitHub gives you a TXT record to add in Cloudflare. Add it, then click Verify.
 
@@ -109,9 +94,9 @@ The registrar is GoDaddy, with nameservers on Cloudflare, so edit the records in
 | A | `@` | `185.199.109.153` | DNS only |
 | A | `@` | `185.199.110.153` | DNS only |
 | A | `@` | `185.199.111.153` | DNS only |
-| CNAME | `www` | `<your-username>.github.io` | DNS only |
+| CNAME | `www` | `rsm-dvschenone.github.io` | DNS only |
 
-- **The `www` record almost certainly needs to change.** It currently points at `rsm-dvschenone.github.io`, and it has to point at your *new* username. The A records probably don't need to change.
+- **These records are probably already correct**, since the account isn't changing. Just confirm they match, and that `www` points at `rsm-dvschenone.github.io` (or your new username if you renamed the account in step 2).
 - Keep the records set to **DNS only** (grey cloud), at least until GitHub has issued the HTTPS certificate. Cloudflare's proxy blocks GitHub's certificate check. If you later turn the proxy on, set Cloudflare **SSL/TLS mode to Full**. "Flexible" causes redirect loops.
 - Optional: add AAAA records for IPv6: `2606:50c0:8000::153`, `2606:50c0:8001::153`, `2606:50c0:8002::153`, `2606:50c0:8003::153`.
 
@@ -119,7 +104,7 @@ Check from WSL:
 
 ```bash
 dig +short dominicschenone.com          # should list the four 185.199.x.153 IPs
-dig +short www.dominicschenone.com      # should show <your-username>.github.io
+dig +short www.dominicschenone.com      # should show rsm-dvschenone.github.io
 ```
 
 ### Step 8: Verify the live site
