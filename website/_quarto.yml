@@ -3,14 +3,18 @@ project:
   output-dir: ../docs
   resources:
     - styles.css
+    - apple-touch-icon.png
+    - images/og-card.png
 
 website:
   title: "Schenone Consulting"
   site-url: "https://dominicschenone.com"
   description: "Custom web development, business intelligence, and data engineering, without the enterprise overhead."
   favicon: favicon.svg
+  image: images/og-card.png   # link-preview card (iMessage, LinkedIn, Slack); 1200x630
   open-graph: true
-  twitter-card: true
+  twitter-card:
+    card-style: summary_large_image
   navbar:
     left:
       - href: index.qmd

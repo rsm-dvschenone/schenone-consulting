@@ -1,4 +1,5 @@
 ---
+description: "Selected projects and builds from Schenone Consulting."
 title: "Work"
 subtitle: "Selected projects and builds. Client case studies are published with permission; demos are built on public or synthetic data and labeled as such."
 ---

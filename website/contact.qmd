@@ -1,4 +1,5 @@
 ---
+description: "Tell us what you're working with. A first conversation costs nothing."
 title: "Contact"
 subtitle: "Whether it's a website, a dashboard, a stubborn integration, or a pile of manual reporting you'd like to never touch again, a first conversation costs nothing."
 ---

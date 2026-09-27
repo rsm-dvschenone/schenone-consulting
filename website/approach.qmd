@@ -1,4 +1,5 @@
 ---
+description: "Enterprise engineering practices on lean, low-cost infrastructure you own."
 title: "Our Approach"
 subtitle: "Most businesses have the same data problems large companies do. What they don't have is the budget or headcount for the way large companies usually solve them. That gap is what this practice is built for."
 ---

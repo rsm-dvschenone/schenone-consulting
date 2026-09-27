@@ -1,4 +1,5 @@
 ---
+description: "Custom websites, dashboards, data integrations, and pipelines, without the enterprise overhead. San Diego based, remote clients welcome."
 title: ""
 pagetitle: "Schenone Consulting | Web, BI & Data Engineering"
 ---

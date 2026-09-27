@@ -1,4 +1,5 @@
 ---
+description: "Dom Schenone: BI analyst, data engineer, and founder of Schenone Consulting in Ocean Beach, San Diego."
 title: "About"
 subtitle: "An independent practice where the person you talk to is the person doing the work: no account managers, no hand-offs, no templates dressed up as custom work."
 ---
