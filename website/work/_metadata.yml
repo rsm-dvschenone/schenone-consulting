@@ -1,0 +1,3 @@
+# Applies to every case study in work/<project>/index.qmd
+body-classes: project-page
+lightbox: true   # click a screenshot to view it full size

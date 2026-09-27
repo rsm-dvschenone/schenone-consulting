@@ -1,0 +1,52 @@
+---
+title: "Schenone Farms"
+subtitle: "A website for a fifth-generation cherry and walnut farm in Linden, California, built to bring customers from the orchard to the weekend market."
+description: "A marketing site for a family-owned cherry and walnut farm: the family story, where to find the harvest each weekend, private orders, and a photo gallery from the orchard."
+image: home.jpg
+image-alt: "Schenone Farms home page with a vintage Schenone Bros. farm truck"
+order: 20
+
+status: "Offline"
+kind: "Website"
+client: "Schenone Farms, Linden CA"
+year: "2025"
+role: "Design, build, copy & launch"
+services:
+  - Website design and build
+  - Copywriting and family history
+  - Photo selection and gallery
+  - Custom domain and hosting setup
+stack: [Quarto, Bootstrap, JavaScript, GitHub Pages, Custom domain]
+offline-note: "The site is offline for now. The screenshots below are from the final build."
+---
+
+{{< project-meta >}}
+
+## The brief
+
+Schenone Farms is a small, family-owned cherry farm in Linden, California, run by the family for five generations. Each season it sells fresh-picked cherries direct to customers, including weekends at Kobey's Swap Meet in San Diego from May through early July. What it was missing was one place to point people to: who the family is, where to find them this weekend, and how to order.
+
+## What I built
+
+A five-page site with the farm's own voice and photos at the center:
+
+- **Home**: the farm in one line and this season's market schedule, so the most time-sensitive thing is the first thing people see.
+- **Our Story**: the family history, from Ernie Schenone Sr. to today, told alongside photos from the orchard and the family archive.
+- **Contact**: the farm's address and map, weekend market hours, an email for private and wholesale orders, and Instagram.
+- **Gallery**: harvest photos from the season, from blossoms to the full bins.
+
+It launched on the farm's own domain, schenonefarms.com, on free static hosting, so there was nothing to maintain and nothing to pay for beyond the domain.
+
+::: {.project-shots}
+![Home: the season's market schedule comes first](home.jpg)
+
+![Our Story: five generations of the family on the land](story.jpg)
+
+![Contact: address, market hours, private orders](contact.jpg)
+
+![On a phone, where most market-goers find it](phone-home.jpg){.shot-phone}
+:::
+
+## What I'd do next
+
+The site was built as a seasonal storefront. If it comes back, the next step is making it work year-round: a market schedule the family can update from their phone, a simple pre-order form for pickup at the market, and walnut sales in the off-season.

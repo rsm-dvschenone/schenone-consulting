@@ -1,0 +1,44 @@
+<%
+// Work page cards. Items come from work/*/index.qmd (case studies) and
+// work/cards.yml (write-up-coming-soon demos and the open slot).
+//   status  → coloured pill: "Live", "Live demo" (green), "In progress" (amber), "Offline" (grey)
+//   kind    → plain pill: "Client project", "Demo", "Personal", "Open slot"
+//   coming-soon: true → not clickable, "Write-up coming soon" footer
+//   open: true + href → the dashed call-to-action card
+// Output is wrapped as raw HTML so Quarto doesn't read indented lines as Markdown code.
+const slug = (s) => String(s).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+%>
+```{=html}
+<div class="work-grid">
+<% for (const item of items) {
+     const href = item.href || (item['coming-soon'] ? null : item.path);
+     const tag = href ? 'a' : 'div';
+     const classes = ['work-card'];
+     if (item.open) classes.push('work-open');
+     if (item.image) classes.push('has-thumb');
+     const stack = Array.isArray(item.stack) ? item.stack : (item.stack ? [item.stack] : []);
+%>
+  <<%= tag %> class="<%= classes.join(' ') %>"<% if (href) { %> href="<%= href %>"<% } %> <%- metadataAttrs(item) %>>
+    <% if (item.image) { %>
+    <div class="work-thumb"><img src="<%= item.image %>" alt="<%= item['image-alt'] || '' %>" loading="lazy"></div>
+    <% } %>
+    <div class="work-meta">
+      <% if (item.status) { %><span class="status status-<%= slug(item.status) %>"><%= item.status %></span><% } %>
+      <% if (item.kind) { %><span class="kind"><%= item.kind %></span><% } %>
+    </div>
+    <h3><%= item.title %></h3>
+    <% if (item.description) { %><p><%= item.description %></p><% } %>
+    <% if (stack.length) { %>
+    <div class="chips"><% for (const s of stack) { %><span><%= s %></span><% } %></div>
+    <% } %>
+    <% if (item['coming-soon']) { %>
+    <p class="work-soon">Write-up coming soon</p>
+    <% } else if (item.open) { %>
+    <span class="more-link"><%= item.cta || 'Start a conversation' %></span>
+    <% } else { %>
+    <span class="more-link work-more"><%= item.cta || 'Read the case study' %></span>
+    <% } %>
+  </<%= tag %>>
+<% } %>
+</div>
+```

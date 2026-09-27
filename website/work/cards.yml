@@ -1,0 +1,26 @@
+# Work-page cards that aren't full case studies yet.
+# Case studies live in work/<project>/index.qmd and appear automatically.
+# `order` sets position on the Work page (lower = earlier), shared with case studies.
+
+- title: "POS-to-warehouse pipeline"
+  description: "An automated pipeline that pulls sales, inventory, and cost data from a point-of-sale API, models it in Postgres, and feeds margin and inventory reporting."
+  status: "In progress"
+  kind: "Demo"
+  stack: ["Python", "REST API", "PostgreSQL", "GitHub Actions"]
+  coming-soon: true
+  order: 80
+
+- title: "Live BI dashboard"
+  description: "An interactive dashboard on a public dataset, showing the full path from raw source to defined metrics to a report people can actually use."
+  status: "In progress"
+  kind: "Demo"
+  stack: ["SQL", "Data modeling", "Power BI"]
+  coming-soon: true
+  order: 81
+
+- title: "Your project here"
+  description: "Have a dashboard, integration, pipeline, or website that needs building? Early clients get a close, hands-on engagement and a fixed quote up front."
+  kind: "Open slot"
+  open: true
+  href: "contact.html"
+  order: 99

@@ -39,6 +39,34 @@
     "href": "work.html",
     "title": "Work",
     "section": "",
-    "text": "In progressDemo\n    POS-to-warehouse pipeline\n    An automated pipeline that pulls sales, inventory, and cost data from a point-of-sale API, models it in Postgres, and feeds margin and inventory reporting.\n    PythonREST APIPostgreSQLGitHub Actions\n    Write-up coming soon\n  \n\n  \n    In progressDemo\n    Live BI dashboard\n    An interactive dashboard on a public dataset, showing the full path from raw source to defined metrics to a report people can actually use.\n    SQLData modelingPower BI\n    Write-up coming soon\n  \n\n  \n    Open slot\n    Your project here\n    Have a dashboard, integration, pipeline, or website that needs building? Early clients get a close, hands-on engagement and a fixed quote up front.\n    Start a conversation"
+    "text": "Offline\n      Website\n    \n    Schenone Farms\n    A marketing site for a family-owned cherry and walnut farm: the family story, where to find the harvest each weekend, private orders, and a photo gallery from the orchard.\n    \n    QuartoBootstrapJavaScriptGitHub PagesCustom domain\n    \n    \n    Read the case study\n    \n  \n\n  \n    \n    \n      In progress\n      Demo\n    \n    POS-to-warehouse pipeline\n    An automated pipeline that pulls sales, inventory, and cost data from a point-of-sale API, models it in Postgres, and feeds margin and inventory reporting.\n    \n    PythonREST APIPostgreSQLGitHub Actions\n    \n    \n    Write-up coming soon\n    \n  \n\n  \n    \n    \n      In progress\n      Demo\n    \n    Live BI dashboard\n    An interactive dashboard on a public dataset, showing the full path from raw source to defined metrics to a report people can actually use.\n    \n    SQLData modelingPower BI\n    \n    \n    Write-up coming soon\n    \n  \n\n  \n    \n    \n      \n      Open slot\n    \n    Your project here\n    Have a dashboard, integration, pipeline, or website that needs building? Early clients get a close, hands-on engagement and a fixed quote up front.\n    \n    \n    Start a conversation\n    \n  \n\n\nNo matching items"
+  },
+  {
+    "objectID": "work/schenone-farms/index.html",
+    "href": "work/schenone-farms/index.html",
+    "title": "Schenone Farms",
+    "section": "",
+    "text": "ClientSchenone Farms, Linden CA\nYear2025\nRoleDesign, build, copy & launch\nStatusOffline\n\n\n\nWebsite design and build\nCopywriting and family history\nPhoto selection and gallery\nCustom domain and hosting setup\n\n\nQuarto\nBootstrap\nJavaScript\nGitHub Pages\nCustom domain\n\n\nThe site is offline for now. The screenshots below are from the final build."
+  },
+  {
+    "objectID": "work/schenone-farms/index.html#the-brief",
+    "href": "work/schenone-farms/index.html#the-brief",
+    "title": "Schenone Farms",
+    "section": "The brief",
+    "text": "The brief\nSchenone Farms is a small, family-owned cherry farm in Linden, California, run by the family for five generations. Each season it sells fresh-picked cherries direct to customers, including weekends at Kobey’s Swap Meet in San Diego from May through early July. What it was missing was one place to point people to: who the family is, where to find them this weekend, and how to order."
+  },
+  {
+    "objectID": "work/schenone-farms/index.html#what-i-built",
+    "href": "work/schenone-farms/index.html#what-i-built",
+    "title": "Schenone Farms",
+    "section": "What I built",
+    "text": "What I built\nA five-page site with the farm’s own voice and photos at the center:\n\nHome: the farm in one line and this season’s market schedule, so the most time-sensitive thing is the first thing people see.\nOur Story: the family history, from Ernie Schenone Sr. to today, told alongside photos from the orchard and the family archive.\nContact: the farm’s address and map, weekend market hours, an email for private and wholesale orders, and Instagram.\nGallery: harvest photos from the season, from blossoms to the full bins.\n\nIt launched on the farm’s own domain, schenonefarms.com, on free static hosting, so there was nothing to maintain and nothing to pay for beyond the domain.\n\n\n\n\nHome: the season’s market schedule comes first\n\n\n\n\n\nOur Story: five generations of the family on the land\n\n\n\n\n\nContact: address, market hours, private orders\n\n\n\n\n\nOn a phone, where most market-goers find it"
+  },
+  {
+    "objectID": "work/schenone-farms/index.html#what-id-do-next",
+    "href": "work/schenone-farms/index.html#what-id-do-next",
+    "title": "Schenone Farms",
+    "section": "What I’d do next",
+    "text": "What I’d do next\nThe site was built as a seasonal storefront. If it comes back, the next step is making it work year-round: a market schedule the family can update from their phone, a simple pre-order form for pickup at the market, and walnut sales in the off-season."
   }
 ]

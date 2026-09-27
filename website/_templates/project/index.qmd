@@ -1,0 +1,53 @@
+---
+# ── Copy this folder to website/work/<project-slug>/ and fill it in. ──────────
+# The Work page card and this page's header are built from these fields.
+
+title: "Project name"
+subtitle: "One sentence: what it is and who it's for. Shown under the title."
+description: "Two sentences for the Work page card: what was built and why it matters."
+image: cover.png            # card thumbnail (in this folder); 16:10 screenshots work best
+image-alt: "What the cover image shows"
+order: 30                   # position on the Work page, lower = earlier (demos use 80+, open slot 99)
+
+draft: true                 # keeps it off the live site; delete when it's ready (and approved)
+
+status: "Live"              # Live · Live demo (green) · In progress (amber) · Offline (grey)
+kind: "Client project"      # Client project · Website · Demo · Personal
+client: "Client name, City"
+year: "2026"
+role: "Design, build, launch"
+services:
+  - Service you provided
+  - Another service
+stack: [Tool, Framework, Hosting]
+
+links:                      # buttons under the header; the first is the primary one
+  - label: "Visit the site"
+    url: "https://example.com"
+# No live link? Remove `links` and explain instead:
+# offline-note: "The site is offline for now. The screenshots below are from the final build."
+---
+
+{{< project-meta >}}
+
+## The brief
+
+What the client needed, and what was in the way.
+
+## What I built
+
+The work itself, in plain language. Lead with what the client or their customers can now do.
+
+<!-- Optional: an interactive embed of the live site (click to load).
+{{< project-embed url="https://example.com" image="cover.png" label="Launch the live site" caption="…" >}}
+-->
+
+::: {.project-shots}
+![Caption for the first screenshot](cover.png)
+
+![Phone screenshots get the phone class](phone.png){.shot-phone}
+:::
+
+## Result
+
+What changed. Only real outcomes; if it's too early, say what's next instead.

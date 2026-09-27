@@ -22,6 +22,28 @@ quarto render         # rebuild ../docs
 
 Then commit **both** `website/` (source) and `docs/` (output) and push. Pages only serves what's in `docs/` on `main`.
 
+## Adding a project
+
+The Work page builds itself: every folder in `work/` becomes a card, and each card opens that folder's case-study page.
+
+1. Copy `_templates/project/` to `work/<project-slug>/` (the slug becomes the URL: `dominicschenone.com/work/<project-slug>/`).
+2. Drop the screenshots into that folder and fill in the front matter in `index.qmd`: title, one-line subtitle, card description, cover `image`, `status`, `services`, `stack`, and `links` to the live site (or an `offline-note` if there isn't one).
+3. Write the page body: the brief, what you built, screenshots in a `::: {.project-shots}` block, and optionally `{{< project-embed url="…" >}}` for a click-to-load live demo.
+4. `quarto render`, commit, push.
+
+| Piece | File |
+|---|---|
+| Work page listing | `work.qmd` (sort order, which fields cards use) |
+| Card markup | `_work-listing.ejs` |
+| Cards that aren't case studies (in-progress demos, open slot) | `work/cards.yml` |
+| Project header (facts, services, stack, buttons) and live embed | `_extensions/project/project.lua`, used as `{{< project-meta >}}` and `{{< project-embed >}}` |
+| Settings for every case study (page class, click-to-zoom screenshots) | `work/_metadata.yml` |
+| Styles | `styles.css` → "work" and "project pages" sections |
+
+**Drafts.** `draft: true` in a project's front matter keeps it off the live site: no card, not in search or the sitemap, and its page renders blank. To look at a draft locally, run `quarto render -M draft-mode:visible` and open `../docs/work/<slug>/index.html` (or `quarto preview`). Then run a plain `quarto render` before committing so the public build is draft-free again.
+
+**Unapproved client work stays off GitHub too.** This repo is public, so a draft's source (`work/<slug>/`) would be readable on GitHub even though the page isn't live. List both `website/work/<slug>/` and `docs/work/<slug>/` in `.git/info/exclude` (git's local-only ignore file, never committed) until the client approves. When they do: delete `draft: true`, remove those two lines, `quarto render`, commit, push.
+
 Quarto prints a warning that it's "refusing to remove docs/site_libs". That's expected, because the output folder is outside the project, and it's harmless. It also means **deleted pages aren't cleaned out of `docs/` automatically**, so delete the stale `.html` by hand.
 
 ---

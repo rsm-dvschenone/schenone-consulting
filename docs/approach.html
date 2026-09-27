@@ -79,9 +79,10 @@ ul.task-list li input[type="checkbox"] {
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=Geist+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
 <meta name="theme-color" content="#06080c">
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<!-- Root-relative paths: this file is included verbatim on pages in subfolders too (work/<project>/). -->
+<link rel="apple-touch-icon" href="./apple-touch-icon.png">
 <!-- Bump ?v= whenever styles.css changes so browsers and Cloudflare fetch the new file -->
-<link rel="stylesheet" href="styles.css?v=2026092702">
+<link rel="stylesheet" href="./styles.css?v=2026092801">
 
 
 <meta property="og:title" content="Our Approach – Schenone Consulting">
@@ -367,14 +368,43 @@ ul.task-list li input[type="checkbox"] {
 </main> <!-- /main -->
 <script>
   // Interior pages: add a "~/page" path label above the Quarto title.
+  // Case studies read "~/work/<project>" and keep "Work" highlighted in the nav.
   (function () {
     var title = document.querySelector("#title-block-header h1.title");
     if (!title) return;
-    var page = location.pathname.split("/").pop().replace(/\.html$/, "") || "index";
+    var parts = location.pathname.replace(/\/index\.html$|\/$/, "").split("/").filter(Boolean);
+    var page = (parts.length ? parts.join("/") : "index").replace(/\.html$/, "");
     var p = document.createElement("p");
     p.className = "eyebrow path";
     p.textContent = page;
     title.parentNode.insertBefore(p, title);
+
+    if (parts[0] === "work" && parts.length > 1) {
+      var work = document.querySelector('.navbar-nav a.nav-link[href$="work.html"]');
+      if (work) work.classList.add("active");
+    }
+  })();
+
+  // Case-study embeds: load the live site only when asked (keeps pages fast).
+  // Small screens open it in a new tab instead of a cramped iframe.
+  (function () {
+    document.querySelectorAll(".project-embed-frame").forEach(function (frame) {
+      var button = frame.querySelector(".project-embed-launch");
+      if (!button) return;
+      button.addEventListener("click", function () {
+        var src = frame.getAttribute("data-src");
+        if (window.matchMedia("(max-width: 700px)").matches) {
+          window.open(src, "_blank", "noopener");
+          return;
+        }
+        var iframe = document.createElement("iframe");
+        iframe.src = src;
+        iframe.title = frame.getAttribute("data-title") || "Live project";
+        iframe.loading = "eager";
+        frame.innerHTML = "";
+        frame.appendChild(iframe);
+      });
+    });
   })();
 
   // Fade content in as it scrolls into view. Only arms when JS runs and motion is allowed,
@@ -383,7 +413,7 @@ ul.task-list li input[type="checkbox"] {
     if (!("IntersectionObserver" in window)) return;
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     var targets = document.querySelectorAll(
-      ".section-head, .ruled, .work-card, .steps > *, .service-row, .plan, .viz-card, .compare, .terminal, .cta-panel, .about-grid, .quote, .facts, .contact-grid > *"
+      ".section-head, .ruled, .work-card, .steps > *, .service-row, .plan, .viz-card, .compare, .terminal, .cta-panel, .about-grid, .quote, .facts, .contact-grid > *, .project-shots > *, .project-embed"
     );
     document.documentElement.classList.add("js-reveal");
     var io = new IntersectionObserver(function (entries) {
