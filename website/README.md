@@ -156,4 +156,10 @@ The email DNS records live in **Cloudflare**, not GoDaddy: MX → `dominicscheno
 
 ## What got stripped from the original site
 
-Homework/class content (`project_assignments/`), the Tennis dashboard, the resume PDF, and a handful of stray files (a leftover `pgweb` binary, Windows `Zone.Identifier` cruft) were dropped; none of it belonged on a business site. The headshot (`images/dom-headshot.jpg`) was kept for the About page. That content is still reachable on the `legacy-site` branch after step 5.
+Homework/class content (`project_assignments/`), the Tennis dashboard, the resume PDF, and a handful of stray files (a leftover `pgweb` binary, Windows `Zone.Identifier` cruft) were dropped; none of it belonged on a business site. The headshot (`images/dom-headshot.jpg`) was kept for the About page. That old site now lives in the **private** repo `rsm-dvschenone/doms-chill-site-archive`. The `legacy-site` branch was removed from this public repo on 2026-09-27 because it held the resume PDF and an old Firebase config.
+
+## Security settings (2026-09-27)
+
+- **History rewritten** so business files and the old planning README never appear in this repo's commits. A pre-rewrite backup bundle exists only on Dom's machine (`~/backups/`); never upload it.
+- **`main` is protected:** no force-pushes and no deletion, including for admins. Normal pushes work as before. To change this: repo Settings → Branches.
+- **Secret scanning and push protection are on:** GitHub blocks a push that contains a recognizable credential. Dependabot alerts are on.
