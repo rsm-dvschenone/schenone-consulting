@@ -1,11 +1,22 @@
 <script>
+  // Interior pages: add a "~/page" path label above the Quarto title.
+  (function () {
+    var title = document.querySelector("#title-block-header h1.title");
+    if (!title) return;
+    var page = location.pathname.split("/").pop().replace(/\.html$/, "") || "index";
+    var p = document.createElement("p");
+    p.className = "eyebrow path";
+    p.textContent = page;
+    title.parentNode.insertBefore(p, title);
+  })();
+
   // Fade content in as it scrolls into view. Only arms when JS runs and motion is allowed,
   // so the page is fully visible without it.
   (function () {
     if (!("IntersectionObserver" in window)) return;
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     var targets = document.querySelectorAll(
-      ".section-head, .ruled,.steps > *, .service-row, .plan, .viz-card, .compare, .skip-keep > *, .cta-panel, .about-grid, .quote, .facts, .contact-grid > *"
+      ".section-head, .ruled, .steps > *, .service-row, .plan, .viz-card, .compare, .terminal, .cta-panel, .about-grid, .quote, .facts, .contact-grid > *"
     );
     document.documentElement.classList.add("js-reveal");
     var io = new IntersectionObserver(function (entries) {

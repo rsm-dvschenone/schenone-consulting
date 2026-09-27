@@ -82,8 +82,8 @@ subtitle: "Most businesses have the same data problems large companies do. What 
 
 <div class="viz-card">
 <div class="viz-legend">
-  <span class="viz-legend-item"><span class="viz-legend-swatch" style="background:var(--accent-blue)"></span>Share of volume</span>
-  <span class="viz-legend-item"><span class="viz-legend-swatch" style="background:var(--accent-orange)"></span>Share of gross margin</span>
+  <span class="viz-legend-item"><span class="viz-legend-swatch" style="background:var(--viz-a)"></span>Share of volume</span>
+  <span class="viz-legend-item"><span class="viz-legend-swatch" style="background:var(--viz-b)"></span>Share of gross margin</span>
 </div>
 <svg viewBox="0 0 640 300" role="img" aria-label="Grouped bar chart comparing each product line's share of volume against its share of gross margin" style="width:100%; height:auto;">
   <g class="viz-axis-text">

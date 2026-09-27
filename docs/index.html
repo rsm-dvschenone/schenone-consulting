@@ -42,14 +42,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-7dae7a6cdeecf83b7c122f016fcaf895.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-2d143800eac80d48c1e8995cb415bf9b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-7dae7a6cdeecf83b7c122f016fcaf895.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-a83cbf62fba41aac237f2af41c0390dd.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -80,7 +76,8 @@ ul.task-list li input[type="checkbox"] {
 <style>html{ scroll-behavior: smooth; }</style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=Geist+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<meta name="theme-color" content="#06080c">
 
 
 <link rel="stylesheet" href="styles.css">
@@ -90,169 +87,7 @@ ul.task-list li input[type="checkbox"] {
 <meta name="twitter:card" content="summary">
 </head>
 
-<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
-    const toggleBodyColorMode = (bsSheetEl) => {
-      const mode = bsSheetEl.getAttribute("data-mode");
-      const bodyEl = window.document.querySelector("body");
-      if (mode === "dark") {
-        bodyEl.classList.add("quarto-dark");
-        bodyEl.classList.remove("quarto-light");
-      } else {
-        bodyEl.classList.add("quarto-light");
-        bodyEl.classList.remove("quarto-dark");
-      }
-    }
-    const toggleBodyColorPrimary = () => {
-      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
-      if (bsSheetEl) {
-        toggleBodyColorMode(bsSheetEl);
-      }
-    }
-    const setColorSchemeToggle = (alternate) => {
-      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
-      for (let i=0; i < toggles.length; i++) {
-        const toggle = toggles[i];
-        if (toggle) {
-          if (alternate) {
-            toggle.classList.add("alternate");
-          } else {
-            toggle.classList.remove("alternate");
-          }
-        }
-      }
-    };
-    const toggleColorMode = (alternate) => {
-      // Switch the stylesheets
-      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
-      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
-      manageTransitions('#quarto-margin-sidebar .nav-link', false);
-      if (alternate) {
-        // note: dark is layered on light, we don't disable primary!
-        enableStylesheet(alternateStylesheets);
-        for (const sheetNode of alternateStylesheets) {
-          if (sheetNode.id === "quarto-bootstrap") {
-            toggleBodyColorMode(sheetNode);
-          }
-        }
-      } else {
-        disableStylesheet(alternateStylesheets);
-        enableStylesheet(primaryStylesheets)
-        toggleBodyColorPrimary();
-      }
-      manageTransitions('#quarto-margin-sidebar .nav-link', true);
-      // Switch the toggles
-      setColorSchemeToggle(alternate)
-      // Hack to workaround the fact that safari doesn't
-      // properly recolor the scrollbar when toggling (#1455)
-      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
-        manageTransitions("body", false);
-        window.scrollTo(0, 1);
-        setTimeout(() => {
-          window.scrollTo(0, 0);
-          manageTransitions("body", true);
-        }, 40);
-      }
-    }
-    const disableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        stylesheet.rel = 'disabled-stylesheet';
-      }
-    }
-    const enableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
-          stylesheet.rel = 'stylesheet';
-        }
-      }
-    }
-    const manageTransitions = (selector, allowTransitions) => {
-      const els = window.document.querySelectorAll(selector);
-      for (let i=0; i < els.length; i++) {
-        const el = els[i];
-        if (allowTransitions) {
-          el.classList.remove('notransition');
-        } else {
-          el.classList.add('notransition');
-        }
-      }
-    }
-    const isFileUrl = () => {
-      return window.location.protocol === 'file:';
-    }
-    const hasAlternateSentinel = () => {
-      let styleSentinel = getColorSchemeSentinel();
-      if (styleSentinel !== null) {
-        return styleSentinel === "alternate";
-      } else {
-        return false;
-      }
-    }
-    const setStyleSentinel = (alternate) => {
-      const value = alternate ? "alternate" : "default";
-      if (!isFileUrl()) {
-        window.localStorage.setItem("quarto-color-scheme", value);
-      } else {
-        localAlternateSentinel = value;
-      }
-    }
-    const getColorSchemeSentinel = () => {
-      if (!isFileUrl()) {
-        const storageValue = window.localStorage.getItem("quarto-color-scheme");
-        return storageValue != null ? storageValue : localAlternateSentinel;
-      } else {
-        return localAlternateSentinel;
-      }
-    }
-    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-      let newTheme = '';
-      if(authorPrefersDark) {
-        newTheme = isAlternate ? baseTheme : alternateTheme;
-      } else {
-        newTheme = isAlternate ? alternateTheme : baseTheme;
-      }
-      const changeGiscusTheme = () => {
-        // From: https://github.com/giscus/giscus/issues/336
-        const sendMessage = (message) => {
-          const iframe = document.querySelector('iframe.giscus-frame');
-          if (!iframe) return;
-          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-        }
-        sendMessage({
-          setConfig: {
-            theme: newTheme
-          }
-        });
-      }
-      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-      if (isGiscussLoaded) {
-        changeGiscusTheme();
-      }
-    };
-    const authorPrefersDark = false;
-    const darkModeDefault = authorPrefersDark;
-      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
-    // Dark / light mode switch
-    window.quartoToggleColorScheme = () => {
-      // Read the current dark / light value
-      let toAlternate = !hasAlternateSentinel();
-      toggleColorMode(toAlternate);
-      setStyleSentinel(toAlternate);
-      toggleGiscusIfUsed(toAlternate, darkModeDefault);
-      window.dispatchEvent(new Event('resize'));
-    };
-    // Switch to dark mode if need be
-    if (hasAlternateSentinel()) {
-      toggleColorMode(true);
-    } else {
-      toggleColorMode(false);
-    }
-  </script>
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -292,7 +127,6 @@ ul.task-list li input[type="checkbox"] {
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -308,12 +142,11 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-
 <div class="hero">
   <div class="hero-grid">
     <div class="hero-copy">
-      <p class="eyebrow">Web · Business Intelligence · Data Engineering</p>
-      <h1>Enterprise-grade data &amp; web work, <em>without the enterprise overhead.</em></h1>
+      <p class="eyebrow">web · business intelligence · data engineering</p>
+      <h1>Enterprise-grade data &amp; web work, <em>without the enterprise overhead</em><span class="cursor"></span></h1>
       <p class="lede">Custom websites, dashboards, integrations, and pipelines for businesses that need real technical capability but don't have an IT department, a data team, or a six-figure software budget. <strong>Sized to fit you, built on lean infrastructure, and yours when it's done.</strong></p>
       <div class="hero-actions">
         <a class="btn-cta" href="contact.html">Start a conversation</a>
@@ -452,24 +285,20 @@ ul.task-list li input[type="checkbox"] {
     </div>
     <p>Large organizations solve these problems with platform licenses, dedicated infrastructure, and a team to run it all. You need the outcome, not the overhead. Same engineering standards, a fraction of the footprint, and often less per month than a single software seat.</p>
   </div>
-  <div class="skip-keep">
-    <div class="skip">
-      <h3>What you skip</h3>
-      <ul>
-        <li>Per-seat platform licenses and annual contracts</li>
-        <li>Servers and cloud platforms to administer</li>
-        <li>A data team and IT staff to keep it running</li>
-        <li>Months of requirements and procurement</li>
-      </ul>
-    </div>
-    <div class="keep">
-      <h3>What you keep</h3>
-      <ul>
-        <li>Tested, version-controlled pipelines</li>
-        <li>Metrics defined once and trusted everywhere</li>
-        <li>Monitoring and alerts when something breaks</li>
-        <li>Full ownership of your code, accounts, and data</li>
-      </ul>
+  <div class="terminal" role="img" aria-label="Comparison: enterprise stack items removed, right-sized stack items added">
+    <div class="term-bar"><span class="term-dots"><i></i><i></i><i></i></span><span>git diff enterprise-stack right-sized-stack</span></div>
+    <div class="term-body">
+      <div class="ln hunk" data-n="1"><span class="sign"></span><span class="txt">@@ what you skip @@</span></div>
+      <div class="ln del" data-n="2"><span class="sign">-</span><span class="txt">per-seat platform licenses and annual contracts</span></div>
+      <div class="ln del" data-n="3"><span class="sign">-</span><span class="txt">servers and cloud platforms to administer</span></div>
+      <div class="ln del" data-n="4"><span class="sign">-</span><span class="txt">a data team and IT staff to keep it running</span></div>
+      <div class="ln del" data-n="5"><span class="sign">-</span><span class="txt">months of requirements and procurement</span></div>
+      <div class="ln cm" data-n="6"><span class="sign"></span><span class="txt">&nbsp;</span></div>
+      <div class="ln hunk" data-n="7"><span class="sign"></span><span class="txt">@@ what you keep @@</span></div>
+      <div class="ln add" data-n="8"><span class="sign">+</span><span class="txt">tested, version-controlled pipelines</span></div>
+      <div class="ln add" data-n="9"><span class="sign">+</span><span class="txt">metrics defined once and trusted everywhere</span></div>
+      <div class="ln add" data-n="10"><span class="sign">+</span><span class="txt">monitoring and alerts when something breaks</span></div>
+      <div class="ln add" data-n="11"><span class="sign">+</span><span class="txt">full ownership of your code, accounts, and data</span></div>
     </div>
   </div>
 </div>
@@ -519,13 +348,24 @@ ul.task-list li input[type="checkbox"] {
 
 </main> <!-- /main -->
 <script>
+  // Interior pages: add a "~/page" path label above the Quarto title.
+  (function () {
+    var title = document.querySelector("#title-block-header h1.title");
+    if (!title) return;
+    var page = location.pathname.split("/").pop().replace(/\.html$/, "") || "index";
+    var p = document.createElement("p");
+    p.className = "eyebrow path";
+    p.textContent = page;
+    title.parentNode.insertBefore(p, title);
+  })();
+
   // Fade content in as it scrolls into view. Only arms when JS runs and motion is allowed,
   // so the page is fully visible without it.
   (function () {
     if (!("IntersectionObserver" in window)) return;
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     var targets = document.querySelectorAll(
-      ".section-head, .ruled,.steps > *, .service-row, .plan, .viz-card, .compare, .skip-keep > *, .cta-panel, .about-grid, .quote, .facts, .contact-grid > *"
+      ".section-head, .ruled, .steps > *, .service-row, .plan, .viz-card, .compare, .terminal, .cta-panel, .about-grid, .quote, .facts, .contact-grid > *"
     );
     document.documentElement.classList.add("js-reveal");
     var io = new IntersectionObserver(function (entries) {
@@ -542,19 +382,6 @@ ul.task-list li input[type="checkbox"] {
 </script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
-    // Ensure there is a toggle, if there isn't float one in the top right
-    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
-      const a = window.document.createElement('a');
-      a.classList.add('top-right');
-      a.classList.add('quarto-color-scheme-toggle');
-      a.href = "";
-      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
-      const i = window.document.createElement("i");
-      i.classList.add('bi');
-      a.appendChild(i);
-      window.document.body.appendChild(a);
-    }
-    setColorSchemeToggle(hasAlternateSentinel())
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     

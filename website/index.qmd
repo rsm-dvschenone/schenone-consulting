@@ -7,8 +7,8 @@ pagetitle: "Schenone Consulting | Web, BI & Data Engineering"
 <div class="hero">
   <div class="hero-grid">
     <div class="hero-copy">
-      <p class="eyebrow">Web &middot; Business Intelligence &middot; Data Engineering</p>
-      <h1>Enterprise-grade data &amp; web work, <em>without the enterprise overhead.</em></h1>
+      <p class="eyebrow">web &middot; business intelligence &middot; data engineering</p>
+      <h1>Enterprise-grade data &amp; web work, <em>without the enterprise overhead</em><span class="cursor"></span></h1>
       <p class="lede">Custom websites, dashboards, integrations, and pipelines for businesses that need real technical capability but don't have an IT department, a data team, or a six-figure software budget. <strong>Sized to fit you, built on lean infrastructure, and yours when it's done.</strong></p>
       <div class="hero-actions">
         <a class="btn-cta" href="contact.html">Start a conversation</a>
@@ -155,24 +155,20 @@ pagetitle: "Schenone Consulting | Web, BI & Data Engineering"
     </div>
     <p>Large organizations solve these problems with platform licenses, dedicated infrastructure, and a team to run it all. You need the outcome, not the overhead. Same engineering standards, a fraction of the footprint, and often less per month than a single software seat.</p>
   </div>
-  <div class="skip-keep">
-    <div class="skip">
-      <h3>What you skip</h3>
-      <ul>
-        <li>Per-seat platform licenses and annual contracts</li>
-        <li>Servers and cloud platforms to administer</li>
-        <li>A data team and IT staff to keep it running</li>
-        <li>Months of requirements and procurement</li>
-      </ul>
-    </div>
-    <div class="keep">
-      <h3>What you keep</h3>
-      <ul>
-        <li>Tested, version-controlled pipelines</li>
-        <li>Metrics defined once and trusted everywhere</li>
-        <li>Monitoring and alerts when something breaks</li>
-        <li>Full ownership of your code, accounts, and data</li>
-      </ul>
+  <div class="terminal" role="img" aria-label="Comparison: enterprise stack items removed, right-sized stack items added">
+    <div class="term-bar"><span class="term-dots"><i></i><i></i><i></i></span><span>git diff enterprise-stack right-sized-stack</span></div>
+    <div class="term-body">
+      <div class="ln hunk" data-n="1"><span class="sign"></span><span class="txt">@@ what you skip @@</span></div>
+      <div class="ln del" data-n="2"><span class="sign">-</span><span class="txt">per-seat platform licenses and annual contracts</span></div>
+      <div class="ln del" data-n="3"><span class="sign">-</span><span class="txt">servers and cloud platforms to administer</span></div>
+      <div class="ln del" data-n="4"><span class="sign">-</span><span class="txt">a data team and IT staff to keep it running</span></div>
+      <div class="ln del" data-n="5"><span class="sign">-</span><span class="txt">months of requirements and procurement</span></div>
+      <div class="ln cm" data-n="6"><span class="sign"></span><span class="txt">&nbsp;</span></div>
+      <div class="ln hunk" data-n="7"><span class="sign"></span><span class="txt">@@ what you keep @@</span></div>
+      <div class="ln add" data-n="8"><span class="sign">+</span><span class="txt">tested, version-controlled pipelines</span></div>
+      <div class="ln add" data-n="9"><span class="sign">+</span><span class="txt">metrics defined once and trusted everywhere</span></div>
+      <div class="ln add" data-n="10"><span class="sign">+</span><span class="txt">monitoring and alerts when something breaks</span></div>
+      <div class="ln add" data-n="11"><span class="sign">+</span><span class="txt">full ownership of your code, accounts, and data</span></div>
     </div>
   </div>
 </div>
