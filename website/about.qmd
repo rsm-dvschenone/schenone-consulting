@@ -1,24 +1,38 @@
 ---
 title: "About"
+subtitle: "An independent practice where the person you talk to is the person doing the work: no account managers, no hand-offs, no templates dressed up as custom work."
 ---
 
-::: {.about-layout}
-![](images/dom-headshot.jpg){.about-photo}
-
-## Dom Schenone
-
-I'm a Business Intelligence analyst working in renewable energy, where I build the ETL pipelines, automation, and dashboards that let a company actually see what its own data is telling it. I have a Bachelor's from UCLA and a Master's in Business Analytics from UCSD, and I've spent my career in Python, SQL, Power BI, and Power Query — the exact toolkit behind everything on this site.
-
-<div class="badge-row">
-<span class="badge-pill">UCLA</span>
-<span class="badge-pill">UCSD, MS Business Analytics</span>
-<span class="badge-pill">Python &middot; SQL &middot; Power BI</span>
-<span class="badge-pill">Ocean Beach, San Diego</span>
+```{=html}
+<div class="about-grid">
+  <div class="about-photo-wrap">
+    <img src="images/dom-headshot.jpg" alt="Dom Schenone">
+  </div>
+  <div>
+    <p class="eyebrow">Founder &amp; Principal</p>
+    <h2>Dom Schenone</h2>
+    <p class="lede">I'm a Business Intelligence analyst working in renewable energy, where I build the ETL pipelines, automation, and dashboards that let a company actually see what its own data is telling it.</p>
+    <p>I have a Bachelor's from UCLA and a Master's in Business Analytics from UCSD, and I've spent my career in Python, SQL, Power BI, and Power Query, the exact toolkit behind everything on this site.</p>
+    <p>Inside a large organization, getting good data takes a warehouse, a stack of licensed tools, and a team to run them. Most businesses need the same outcome without any of that overhead. That's the gap this consultancy exists to close.</p>
+    <p>I'm based in Ocean Beach, San Diego, and work directly with every client. Remote engagements are welcome.</p>
+  </div>
 </div>
 
-Independent liquor stores and smoke shops run on the same kind of POS data a Fortune 500 company pays a whole analytics team to interpret — margin by category, inventory turnover, vendor cost trends, seasonality. The difference is nobody's built it for them. That's the gap this consultancy exists to close: the same rigor, sized and priced for a business that's never had it before.
+<blockquote class="quote">The same engineering rigor I use every day, applied with <em>lean, right-sized infrastructure</em> and priced for businesses that have never had a data team.</blockquote>
 
-I'm based in Ocean Beach, San Diego, and work directly with each store I take on — no account managers, no hand-offs, no generic templates pretending to be insight.
-:::
+<dl class="facts">
+  <div><dt>Education</dt><dd>UCLA, Bachelor's<br>UCSD, MS Business Analytics</dd></div>
+  <div><dt>Day job</dt><dd>BI Analyst, renewable energy</dd></div>
+  <div><dt>Toolkit</dt><dd>Python, SQL, Power BI, Power Query</dd></div>
+  <div><dt>Based in</dt><dd>Ocean Beach, San Diego</dd></div>
+</dl>
 
-[Get in touch](contact.qmd){.btn-cta}
+<div class="cta-panel">
+  <div>
+    <p class="eyebrow">Work together</p>
+    <h2>You'll talk to the person <em>doing the work.</em></h2>
+    <p>Every conversation, every line of code, every deliverable. Reach out directly.</p>
+  </div>
+  <a class="btn-cta" href="contact.html">Get in touch</a>
+</div>
+```

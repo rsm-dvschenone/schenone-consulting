@@ -5,7 +5,7 @@ project:
 website:
   title: "Schenone Consulting"
   site-url: "https://dominicschenone.com"
-  description: "Business intelligence for independent liquor stores & smoke shops."
+  description: "Custom web development, business intelligence, and data engineering, without the enterprise overhead."
   favicon: favicon.svg
   open-graph: true
   twitter-card: true
@@ -14,13 +14,16 @@ website:
       - href: index.qmd
         text: Home
       - href: services.qmd
-        text: Services & Pricing
-      - href: insights.qmd
-        text: Why It Matters
+        text: Services
+      - href: approach.qmd
+        text: Approach
       - href: about.qmd
         text: About
       - href: contact.qmd
         text: Contact
+  page-footer:
+    left: "© 2026 Schenone Consulting · Web, BI & data engineering"
+    right: "Ocean Beach, San Diego · [hello@dominicschenone.com](mailto:hello@dominicschenone.com)"
 
 format:
   html:
@@ -30,5 +33,9 @@ format:
     css: styles.css
     toc: false
     page-layout: full
+    anchor-sections: false
+    smooth-scroll: true
     include-in-header:
       - fonts.html
+    include-after-body:
+      - reveal.html

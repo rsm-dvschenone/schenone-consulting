@@ -1,73 +1,225 @@
 ---
 title: ""
+pagetitle: "Schenone Consulting | Web, BI & Data Engineering"
 ---
 
-::: {.hero}
-# Your POS system already knows what's wrong with your business.
+```{=html}
+<div class="hero">
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow">Web &middot; Business Intelligence &middot; Data Engineering</p>
+      <h1>Enterprise-grade data &amp; web work, <em>without the enterprise overhead.</em></h1>
+      <p class="lede">Custom websites, dashboards, integrations, and pipelines for businesses that need real technical capability but don't have an IT department, a data team, or a six-figure software budget. <strong>Sized to fit you, built on lean infrastructure, and yours when it's done.</strong></p>
+      <div class="hero-actions">
+        <a class="btn-cta" href="contact.html">Start a conversation</a>
+        <a class="btn-ghost" href="approach.html">How we work</a>
+      </div>
+    </div>
 
-## Nobody's looked.
+    <div class="hero-visual" aria-hidden="true">
+      <div class="pv">
+        <div class="pv-bar"><span class="pv-dot"></span>nightly_refresh <span class="pv-muted">&middot; succeeded &middot; 06:00</span></div>
+        <svg viewBox="0 0 460 340">
+          <text class="pv-cap" x="0" y="12">Sources</text>
+          <text class="pv-cap" x="230" y="12" text-anchor="middle">Model</text>
+          <text class="pv-cap" x="318" y="12">Outputs</text>
 
-Schenone Consulting builds automated dashboards and reporting for independent **liquor stores and smoke shops** — turning the sales data your POS system collects every day into decisions you can actually act on. No BI team, no spreadsheets, no learning curve. It just works, and it's always current.
+          <!-- wires -->
+          <path class="pv-wire" d="M118,49 C160,49 150,169 188,169"/>
+          <path class="pv-wire" d="M118,129 C160,129 150,169 188,169"/>
+          <path class="pv-wire" d="M118,209 C160,209 150,169 188,169"/>
+          <path class="pv-wire" d="M118,289 C160,289 150,169 188,169"/>
+          <path class="pv-wire" d="M272,169 C298,169 292,115 318,115"/>
+          <path class="pv-wire" d="M272,169 C298,169 292,270 318,270"/>
+          <path class="pv-flow" d="M118,49 C160,49 150,169 188,169"/>
+          <path class="pv-flow" d="M118,129 C160,129 150,169 188,169"/>
+          <path class="pv-flow" d="M118,209 C160,209 150,169 188,169"/>
+          <path class="pv-flow" d="M118,289 C160,289 150,169 188,169"/>
+          <path class="pv-flow" d="M272,169 C298,169 292,115 318,115"/>
+          <path class="pv-flow" d="M272,169 C298,169 292,270 318,270"/>
 
-[See what you'd actually see &rarr;](insights.qmd){.btn-cta}
+          <!-- sources -->
+          <rect class="pv-node" x="0" y="30"  width="118" height="38" rx="9"/>
+          <rect class="pv-node" x="0" y="110" width="118" height="38" rx="9"/>
+          <rect class="pv-node" x="0" y="190" width="118" height="38" rx="9"/>
+          <rect class="pv-node" x="0" y="270" width="118" height="38" rx="9"/>
+          <circle class="pv-mint" cx="16" cy="49"  r="3"/>
+          <circle class="pv-mint" cx="16" cy="129" r="3"/>
+          <circle class="pv-mint" cx="16" cy="209" r="3"/>
+          <circle class="pv-mint" cx="16" cy="289" r="3"/>
+          <text class="pv-label" x="28" y="53">POS &amp; sales</text>
+          <text class="pv-label" x="28" y="133">CRM</text>
+          <text class="pv-label" x="28" y="213">Accounting</text>
+          <text class="pv-label" x="28" y="293">APIs &amp; files</text>
+
+          <!-- warehouse -->
+          <path class="pv-db" d="M188,140 V198 A42,12 0 0 0 272,198 V140"/>
+          <ellipse class="pv-db" cx="230" cy="140" rx="42" ry="12"/>
+          <path class="pv-wire" d="M188,169 A42,12 0 0 0 272,169"/>
+          <text class="pv-label" x="230" y="236" text-anchor="middle">warehouse</text>
+
+          <!-- dashboard -->
+          <rect class="pv-node" x="318" y="40" width="142" height="150" rx="10"/>
+          <text class="pv-label" x="332" y="62">dashboard</text>
+          <polyline class="pv-line" points="334,106 356,98 378,102 400,88 422,93 444,78"/>
+          <rect class="pv-soft" x="334" y="154" width="12" height="22" rx="2"/>
+          <rect class="pv-soft" x="352" y="142" width="12" height="34" rx="2"/>
+          <rect class="pv-soft" x="370" y="148" width="12" height="28" rx="2"/>
+          <rect class="pv-soft" x="388" y="130" width="12" height="46" rx="2"/>
+          <rect class="pv-soft" x="406" y="138" width="12" height="38" rx="2"/>
+          <rect class="pv-mint" x="424" y="120" width="12" height="56" rx="2"/>
+
+          <!-- website -->
+          <rect class="pv-node" x="318" y="220" width="142" height="100" rx="10"/>
+          <circle class="pv-soft" cx="332" cy="235" r="3"/>
+          <circle class="pv-soft" cx="342" cy="235" r="3"/>
+          <circle class="pv-soft" cx="352" cy="235" r="3"/>
+          <line x1="318" y1="247" x2="460" y2="247" stroke="rgba(255,255,255,0.12)"/>
+          <rect class="pv-soft" x="332" y="260" width="80" height="7" rx="3.5"/>
+          <rect class="pv-soft" x="332" y="275" width="110" height="4" rx="2"/>
+          <rect class="pv-soft" x="332" y="286" width="94" height="4" rx="2"/>
+          <rect class="pv-mint" x="332" y="299" width="40" height="10" rx="5"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <div class="stack-strip">
+    <span class="label">Built with</span>
+    <span>Python</span><span>SQL</span><span>PostgreSQL</span><span>Power BI</span><span>Looker Studio</span><span>GitHub Actions</span><span>REST APIs</span>
+  </div>
+</div>
+```
+
+::: {.block}
+
+```{=html}
+<div class="section-head">
+  <div>
+    <p class="eyebrow">01 &mdash; Capabilities</p>
+    <h2>Everything between your raw data and <em>the decision.</em></h2>
+  </div>
+  <p>Most projects touch more than one of these: an integration that feeds a warehouse that powers a dashboard embedded in a website. We build the whole path, or just the piece you're missing.</p>
+</div>
+
+<div class="ruled">
+  <div class="cell">
+    <span class="idx">01</span>
+    <div class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/><path d="M7 6.5h.01"/><path d="M10 6.5h.01"/></svg></div>
+    <h3>Websites &amp; web apps</h3>
+    <p>Fast, maintainable sites and internal tools, from a clean marketing site to a custom portal that sits on top of your data.</p>
+  </div>
+  <div class="cell">
+    <span class="idx">02</span>
+    <div class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="4" y="12" width="4" height="8"/><rect x="10" y="7" width="4" height="13"/><rect x="16" y="3" width="4" height="17"/></svg></div>
+    <h3>Dashboards &amp; BI</h3>
+    <p>Always-current reporting in Power BI, Looker Studio, or a custom front end, built around the questions you actually ask.</p>
+  </div>
+  <div class="cell">
+    <span class="idx">03</span>
+    <div class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 17H7A5 5 0 0 1 7 7h2"/><path d="M15 7h2a5 5 0 1 1 0 10h-2"/><path d="M8 12h8"/></svg></div>
+    <h3>Data integrations</h3>
+    <p>Connect the systems you already use (POS, CRM, accounting, spreadsheets, third-party APIs) so data flows automatically instead of by copy-paste.</p>
+  </div>
+  <div class="cell">
+    <span class="idx">04</span>
+    <div class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h10"/><path d="M4 12h16"/><path d="M4 18h7"/><path d="M17 3l3 3-3 3"/><path d="M14 15l3 3-3 3"/></svg></div>
+    <h3>ETL pipelines</h3>
+    <p>Scheduled, tested pipelines in Python and SQL that extract, clean, and load your data so the numbers are right every morning.</p>
+  </div>
+  <div class="cell">
+    <span class="idx">05</span>
+    <div class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg></div>
+    <h3>Data modeling &amp; warehousing</h3>
+    <p>One well-structured source of truth, whether a Postgres warehouse or a tidy semantic model, so every report agrees with every other one.</p>
+  </div>
+  <div class="cell">
+    <span class="idx">06</span>
+    <div class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+    <h3>Automation &amp; reporting</h3>
+    <p>Recurring reports, alerts, and manual workflows turned into things that simply run on schedule, with no babysitting required.</p>
+  </div>
+</div>
+
+<a class="more-link" href="services.html">Explore services in detail</a>
+```
+
 :::
 
-::: {.section}
-## Built for stores running Clover or PAX
-
-If your register is a **Clover** terminal or a **PAX**-based system, we connect directly to it. No new hardware, no changing how you ring up sales, no disrupting your day. We plug into what you already have.
-:::
-
-::: {.section}
-## What you'll actually see
-
-::: {.feature-grid}
-
-<div class="feature-card">
-<div class="feature-icon">
-<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><rect x="4" y="12" width="4" height="8"/><rect x="10" y="7" width="4" height="13"/><rect x="16" y="3" width="4" height="17"/></svg>
+```{=html}
+<div class="band-dark">
+  <div class="section-head">
+    <div>
+      <p class="eyebrow">02 &mdash; The difference</p>
+      <h2>Right-sized, <em>not stripped-down.</em></h2>
+    </div>
+    <p>Large organizations solve these problems with platform licenses, dedicated infrastructure, and a team to run it all. You need the outcome, not the overhead. Same engineering standards, a fraction of the footprint, and often less per month than a single software seat.</p>
+  </div>
+  <div class="skip-keep">
+    <div class="skip">
+      <h3>What you skip</h3>
+      <ul>
+        <li>Per-seat platform licenses and annual contracts</li>
+        <li>Servers and cloud platforms to administer</li>
+        <li>A data team and IT staff to keep it running</li>
+        <li>Months of requirements and procurement</li>
+      </ul>
+    </div>
+    <div class="keep">
+      <h3>What you keep</h3>
+      <ul>
+        <li>Tested, version-controlled pipelines</li>
+        <li>Metrics defined once and trusted everywhere</li>
+        <li>Monitoring and alerts when something breaks</li>
+        <li>Full ownership of your code, accounts, and data</li>
+      </ul>
+    </div>
+  </div>
 </div>
-<h3>Margin, not just volume</h3>
-<p>Beer, wine, spirits, and tobacco carry very different margins. Volume lies; margin doesn't — see which categories actually make you money.</p>
+```
+
+::: {.block}
+
+```{=html}
+<div class="section-head">
+  <div>
+    <p class="eyebrow">03 &mdash; Process</p>
+    <h2>A clear path from <em>problem to production.</em></h2>
+  </div>
+  <p>No open-ended retainers or surprise invoices. You'll know what's being built, what it costs, and when it lands before any work starts.</p>
 </div>
 
-<div class="feature-card">
-<div class="feature-icon">
-<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8 12 3 3 8v8l9 5 9-5V8Z"/><path d="M3 8l9 5 9-5"/><path d="M12 13v8"/></svg>
+<div class="steps">
+  <div class="step">
+    <span class="num">01</span>
+    <h3>Discover</h3>
+    <p>A short conversation about what you're trying to see, fix, or automate, and a look at the systems you already have.</p>
+  </div>
+  <div class="step">
+    <span class="num">02</span>
+    <h3>Scope &amp; quote</h3>
+    <p>A written plan with a fixed price, so you know exactly what you're getting and what it costs.</p>
+  </div>
+  <div class="step">
+    <span class="num">03</span>
+    <h3>Build &amp; validate</h3>
+    <p>Iterative delivery, checked against the numbers you already trust. Nothing ships until it's right.</p>
+  </div>
+  <div class="step">
+    <span class="num">04</span>
+    <h3>Hand off or maintain</h3>
+    <p>Take full ownership with documentation, or keep us on a monthly plan to monitor and extend it.</p>
+  </div>
 </div>
-<h3>Dead weight in inventory</h3>
-<p>Cash tied up in stock that isn't moving, flagged automatically instead of hiding in plain sight on a shelf.</p>
+
+<div class="cta-panel">
+  <div>
+    <p class="eyebrow">Get started</p>
+    <h2>Have a data or web problem <em>on the back burner?</em></h2>
+    <p>A first conversation is free, and you'll leave with a clear sense of what's possible and roughly what it would take.</p>
+  </div>
+  <a class="btn-cta" href="contact.html">Get in touch</a>
 </div>
+```
 
-<div class="feature-card">
-<div class="feature-icon">
-<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 7-8"/><path d="M14 7h6v6"/></svg>
-</div>
-<h3>Vendor cost creep</h3>
-<p>Cost trends by distributor and SKU, tracked over time, so a quiet price increase gets caught before it eats your margin.</p>
-</div>
-
-<div class="feature-card">
-<div class="feature-icon">
-<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4"/><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/><path d="M12 17h.01"/></svg>
-</div>
-<h3>Stockouts on best sellers</h3>
-<p>Running out of a top performer is a lost sale you'd never otherwise see — flagged before it happens, not after.</p>
-</div>
-
-:::
-
-See the full breakdown, with real numbers, on [Why It Matters](insights.qmd).
-:::
-
-::: {.section}
-## Simple, honest pricing
-
-Setup once, then a flat monthly fee — no long-term contract, no enterprise sales process. See [Services & Pricing](services.qmd).
-:::
-
-::: {.cta}
-### Ready to see what your own data looks like?
-
-[Get in touch](contact.qmd){.btn-cta}
 :::

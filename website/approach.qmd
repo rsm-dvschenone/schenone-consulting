@@ -1,0 +1,180 @@
+---
+title: "Our Approach"
+subtitle: "Most businesses have the same data problems large companies do. What they don't have is the budget or headcount for the way large companies usually solve them. That gap is what this practice is built for."
+---
+
+::: {.block}
+
+```{=html}
+<div class="section-head">
+  <div>
+    <p class="eyebrow">01 &mdash; The model</p>
+    <h2>Enterprise practices, <em>lean infrastructure.</em></h2>
+  </div>
+  <p>The engineering standards don't change: version control, tested pipelines, defined metrics, monitoring. What changes is the footprint, and the bill.</p>
+</div>
+
+<div class="compare">
+  <table class="table">
+    <thead>
+      <tr><th></th><th>Typical enterprise approach</th><th>Our approach</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Platform</td><td>Licensed BI and ETL suites with per-seat pricing</td><td>Open-source and managed services; pay for what you use</td></tr>
+      <tr><td>Infrastructure</td><td>Dedicated servers or a cloud data platform to administer</td><td>Serverless and managed hosting, with nothing to patch</td></tr>
+      <tr><td>People</td><td>A data team and an IT team to keep it running</td><td>One accountable builder, plus documentation anyone can follow</td></tr>
+      <tr><td>Timeline</td><td>Months of requirements and procurement</td><td>Weeks, delivered in usable pieces</td></tr>
+      <tr><td>Ownership</td><td>Tied to vendors and contracts</td><td>Your accounts, your code, your data</td></tr>
+    </tbody>
+  </table>
+</div>
+```
+
+:::
+
+::: {.block}
+
+```{=html}
+<div class="section-head">
+  <div>
+    <p class="eyebrow">02 &mdash; Principles</p>
+    <h2>Four rules we <em>build by.</em></h2>
+  </div>
+  <p>They sound simple. They're also the four things most often skipped when a project goes sideways.</p>
+</div>
+
+<div class="ruled two">
+  <div class="cell">
+    <span class="idx">01</span>
+    <h3>Start from the decision</h3>
+    <p>Every dashboard and pipeline starts with a question someone needs answered, not with a tool someone wants to use.</p>
+  </div>
+  <div class="cell">
+    <span class="idx">02</span>
+    <h3>Use what you already have</h3>
+    <p>We connect to your existing systems rather than asking you to replace them or change how your team works.</p>
+  </div>
+  <div class="cell">
+    <span class="idx">03</span>
+    <h3>Trust the numbers</h3>
+    <p>Output is validated against figures you already know, so the first thing you see is something you can believe.</p>
+  </div>
+  <div class="cell">
+    <span class="idx">04</span>
+    <h3>Leave it maintainable</h3>
+    <p>Clear code, clear docs, and no clever one-offs, so the next person to touch it (you, us, or anyone else) can pick it up.</p>
+  </div>
+</div>
+```
+
+:::
+
+::: {.block}
+
+```{=html}
+<div class="section-head">
+  <div>
+    <p class="eyebrow">03 &mdash; The payoff</p>
+    <h2>What good data <em>actually surfaces.</em></h2>
+  </div>
+  <p>Integrated, well-modeled data shows you things no single system can. A simple retail example: the products that sell the most are often not the ones that make the most money.</p>
+</div>
+
+<div class="viz-card">
+<div class="viz-legend">
+  <span class="viz-legend-item"><span class="viz-legend-swatch" style="background:var(--accent-blue)"></span>Share of volume</span>
+  <span class="viz-legend-item"><span class="viz-legend-swatch" style="background:var(--accent-orange)"></span>Share of gross margin</span>
+</div>
+<svg viewBox="0 0 640 300" role="img" aria-label="Grouped bar chart comparing each product line's share of volume against its share of gross margin" style="width:100%; height:auto;">
+  <g class="viz-axis-text">
+    <line class="viz-gridline" x1="100" y1="34" x2="100" y2="288"/>
+    <line class="viz-gridline" x1="200" y1="34" x2="200" y2="288"/>
+    <line class="viz-gridline" x1="300" y1="34" x2="300" y2="288"/>
+    <line class="viz-gridline" x1="400" y1="34" x2="400" y2="288"/>
+    <line class="viz-gridline" x1="500" y1="34" x2="500" y2="288"/>
+    <line class="viz-gridline" x1="600" y1="34" x2="600" y2="288"/>
+    <text x="100" y="24" text-anchor="middle">0%</text>
+    <text x="200" y="24" text-anchor="middle">10%</text>
+    <text x="300" y="24" text-anchor="middle">20%</text>
+    <text x="400" y="24" text-anchor="middle">30%</text>
+    <text x="500" y="24" text-anchor="middle">40%</text>
+    <text x="600" y="24" text-anchor="middle">50%</text>
+  </g>
+  <text class="viz-cat-label" x="90" y="69" text-anchor="end">Line A</text>
+  <g class="viz-bar-group">
+    <path class="viz-bar viz-bar-volume" d="M100,40 H516 A4,4 0 0 1 520,44 V62 A4,4 0 0 1 516,66 H100 Z"><title>Line A: share of volume 42%</title></path>
+    <text class="viz-value-label" x="528" y="57">42%</text>
+    <path class="viz-bar viz-bar-margin" d="M100,66 H336 A4,4 0 0 1 340,70 V88 A4,4 0 0 1 336,92 H100 Z"><title>Line A: share of gross margin 24%</title></path>
+    <text class="viz-value-label" x="348" y="83">24%</text>
+  </g>
+  <text class="viz-cat-label" x="90" y="135" text-anchor="end">Line B</text>
+  <g class="viz-bar-group">
+    <path class="viz-bar viz-bar-volume" d="M100,106 H276 A4,4 0 0 1 280,110 V128 A4,4 0 0 1 276,132 H100 Z"><title>Line B: share of volume 18%</title></path>
+    <text class="viz-value-label" x="288" y="123">18%</text>
+    <path class="viz-bar viz-bar-margin" d="M100,132 H316 A4,4 0 0 1 320,136 V154 A4,4 0 0 1 316,158 H100 Z"><title>Line B: share of gross margin 22%</title></path>
+    <text class="viz-value-label" x="328" y="149">22%</text>
+  </g>
+  <text class="viz-cat-label" x="90" y="201" text-anchor="end">Line C</text>
+  <g class="viz-bar-group">
+    <path class="viz-bar viz-bar-volume" d="M100,172 H346 A4,4 0 0 1 350,176 V194 A4,4 0 0 1 346,198 H100 Z"><title>Line C: share of volume 25%</title></path>
+    <text class="viz-value-label" x="358" y="189">25%</text>
+    <path class="viz-bar viz-bar-margin" d="M100,198 H496 A4,4 0 0 1 500,202 V220 A4,4 0 0 1 496,224 H100 Z"><title>Line C: share of gross margin 40%</title></path>
+    <text class="viz-value-label" x="508" y="215">40%</text>
+  </g>
+  <text class="viz-cat-label" x="90" y="267" text-anchor="end">Other</text>
+  <g class="viz-bar-group">
+    <path class="viz-bar viz-bar-volume" d="M100,238 H246 A4,4 0 0 1 250,242 V260 A4,4 0 0 1 246,264 H100 Z"><title>Other: share of volume 15%</title></path>
+    <text class="viz-value-label" x="258" y="255">15%</text>
+    <path class="viz-bar viz-bar-margin" d="M100,264 H236 A4,4 0 0 1 240,268 V286 A4,4 0 0 1 236,290 H100 Z"><title>Other: share of gross margin 14%</title></path>
+    <text class="viz-value-label" x="248" y="281">14%</text>
+  </g>
+</svg>
+<p class="viz-caption">Illustrative example, not client data. Line C earns far more than its volume suggests, while Line A's margin trails its volume. Seeing this takes sales and cost data joined in one model.</p>
+</div>
+
+<p class="lede" style="margin-top:2rem">The same pattern shows up everywhere: service lines versus billable hours, marketing channels versus customer lifetime value, programs versus cost per outcome. The industry changes; the work doesn't. Connect the data, model it properly, and put the answer in front of the person who needs it.</p>
+```
+
+:::
+
+::: {.block}
+
+```{=html}
+<div class="section-head">
+  <div>
+    <p class="eyebrow">04 &mdash; Fit</p>
+    <h2>Who this is <em>built for.</em></h2>
+  </div>
+  <p>If you've outgrown spreadsheets but a full-time hire or an enterprise platform feels like overkill, you're in the right place.</p>
+</div>
+
+<div class="ruled two">
+  <div class="cell">
+    <h3>Small &amp; mid-sized businesses</h3>
+    <p>Teams that have outgrown spreadsheets but can't justify a full-time data or IT hire.</p>
+  </div>
+  <div class="cell">
+    <h3>Teams inside larger organizations</h3>
+    <p>Departments that need something built now and can't wait in the central IT queue.</p>
+  </div>
+  <div class="cell">
+    <h3>Startups &amp; nonprofits</h3>
+    <p>Organizations that need solid data foundations without burning budget on enterprise tooling.</p>
+  </div>
+  <div class="cell">
+    <h3>Retail &amp; hospitality operators</h3>
+    <p>Businesses sitting on POS and inventory data they've never been able to put to work.</p>
+  </div>
+</div>
+
+<div class="cta-panel">
+  <div>
+    <p class="eyebrow">Next step</p>
+    <h2>See if it's a fit, <em>in fifteen minutes.</em></h2>
+    <p>Tell us what you're working with. You'll get a straight answer on what's possible.</p>
+  </div>
+  <a class="btn-cta" href="contact.html">Get in touch</a>
+</div>
+```
+
+:::

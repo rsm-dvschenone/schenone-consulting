@@ -41,7 +41,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
@@ -78,19 +77,22 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
 
 
 <link rel="stylesheet" href="styles.css">
 <meta property="og:title" content="About – Schenone Consulting">
-<meta property="og:description" content="Business intelligence for independent liquor stores &amp; smoke shops.">
+<meta property="og:description" content="An independent practice where the person you talk to is the person doing the work: no account managers, no hand-offs, no templates dressed up as custom work.">
 <meta property="og:image" content="https://dominicschenone.com/images/dom-headshot.jpg">
 <meta property="og:site_name" content="Schenone Consulting">
+<meta property="og:image:alt" content="Dom Schenone">
 <meta name="twitter:title" content="About – Schenone Consulting">
-<meta name="twitter:description" content="Business intelligence for independent liquor stores &amp; smoke shops.">
+<meta name="twitter:description" content="An independent practice where the person you talk to is the person doing the work: no account managers, no hand-offs, no templates dressed up as custom work.">
 <meta name="twitter:image" content="https://dominicschenone.com/images/dom-headshot.jpg">
+<meta name="twitter:image:alt" content="Dom Schenone">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -279,11 +281,11 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./services.html"> 
-<span class="menu-text">Services &amp; Pricing</span></a>
+<span class="menu-text">Services</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./insights.html"> 
-<span class="menu-text">Why It Matters</span></a>
+    <a class="nav-link" href="./approach.html"> 
+<span class="menu-text">Approach</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./about.html" aria-current="page"> 
@@ -313,6 +315,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">About</h1>
+<p class="subtitle lead">An independent practice where the person you talk to is the person doing the work: no account managers, no hand-offs, no templates dressed up as custom work.</p>
 </div>
 
 
@@ -329,23 +332,63 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="about-layout">
-<p><img src="images/dom-headshot.jpg" class="about-photo img-fluid"></p>
-<section id="dom-schenone" class="level2">
-<h2 class="anchored" data-anchor-id="dom-schenone">Dom Schenone</h2>
-<p>I’m a Business Intelligence analyst working in renewable energy, where I build the ETL pipelines, automation, and dashboards that let a company actually see what its own data is telling it. I have a Bachelor’s from UCLA and a Master’s in Business Analytics from UCSD, and I’ve spent my career in Python, SQL, Power BI, and Power Query — the exact toolkit behind everything on this site.</p>
-<div class="badge-row">
-<p><span class="badge-pill">UCLA</span> <span class="badge-pill">UCSD, MS Business Analytics</span> <span class="badge-pill">Python · SQL · Power BI</span> <span class="badge-pill">Ocean Beach, San Diego</span></p>
+<div class="about-grid">
+  <div class="about-photo-wrap">
+    <img src="images/dom-headshot.jpg" alt="Dom Schenone">
+  </div>
+  <div>
+    <p class="eyebrow">Founder &amp; Principal</p>
+    <h2>Dom Schenone</h2>
+    <p class="lede">I'm a Business Intelligence analyst working in renewable energy, where I build the ETL pipelines, automation, and dashboards that let a company actually see what its own data is telling it.</p>
+    <p>I have a Bachelor's from UCLA and a Master's in Business Analytics from UCSD, and I've spent my career in Python, SQL, Power BI, and Power Query, the exact toolkit behind everything on this site.</p>
+    <p>Inside a large organization, getting good data takes a warehouse, a stack of licensed tools, and a team to run them. Most businesses need the same outcome without any of that overhead. That's the gap this consultancy exists to close.</p>
+    <p>I'm based in Ocean Beach, San Diego, and work directly with every client. Remote engagements are welcome.</p>
+  </div>
 </div>
-<p>Independent liquor stores and smoke shops run on the same kind of POS data a Fortune 500 company pays a whole analytics team to interpret — margin by category, inventory turnover, vendor cost trends, seasonality. The difference is nobody’s built it for them. That’s the gap this consultancy exists to close: the same rigor, sized and priced for a business that’s never had it before.</p>
-<p>I’m based in Ocean Beach, San Diego, and work directly with each store I take on — no account managers, no hand-offs, no generic templates pretending to be insight.</p>
-</section>
+
+<blockquote class="quote blockquote">The same engineering rigor I use every day, applied with <em>lean, right-sized infrastructure</em> and priced for businesses that have never had a data team.</blockquote>
+
+<dl class="facts">
+  <div><dt>Education</dt><dd>UCLA, Bachelor's<br>UCSD, MS Business Analytics</dd></div>
+  <div><dt>Day job</dt><dd>BI Analyst, renewable energy</dd></div>
+  <div><dt>Toolkit</dt><dd>Python, SQL, Power BI, Power Query</dd></div>
+  <div><dt>Based in</dt><dd>Ocean Beach, San Diego</dd></div>
+</dl>
+
+<div class="cta-panel">
+  <div>
+    <p class="eyebrow">Work together</p>
+    <h2>You'll talk to the person <em>doing the work.</em></h2>
+    <p>Every conversation, every line of code, every deliverable. Reach out directly.</p>
+  </div>
+  <a class="btn-cta" href="contact.html">Get in touch</a>
 </div>
-<p><a href="./contact.html" class="btn-cta">Get in touch</a></p>
 
 
 
 </main> <!-- /main -->
+<script>
+  // Fade content in as it scrolls into view. Only arms when JS runs and motion is allowed,
+  // so the page is fully visible without it.
+  (function () {
+    if (!("IntersectionObserver" in window)) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    var targets = document.querySelectorAll(
+      ".section-head, .ruled,.steps > *, .service-row, .plan, .viz-card, .compare, .skip-keep > *, .cta-panel, .about-grid, .quote, .facts, .contact-grid > *"
+    );
+    document.documentElement.classList.add("js-reveal");
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add("is-visible"); io.unobserve(e.target); }
+      });
+    }, { rootMargin: "0px 0px -8% 0px", threshold: 0.08 });
+    targets.forEach(function (el, i) {
+      el.classList.add("reveal");
+      el.style.transitionDelay = (i % 4) * 60 + "ms";
+      io.observe(el);
+    });
+  })();
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
@@ -361,13 +404,6 @@ ul.task-list li input[type="checkbox"] {
       window.document.body.appendChild(a);
     }
     setColorSchemeToggle(hasAlternateSentinel())
-    const icon = "";
-    const anchorJS = new window.AnchorJS();
-    anchorJS.options = {
-      placement: 'right',
-      icon: icon
-    };
-    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     
@@ -760,8 +796,22 @@ ul.task-list li input[type="checkbox"] {
   });
   </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2026 Schenone Consulting · Web, BI &amp; data engineering</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>Ocean Beach, San Diego · <a href="mailto:hello@dominicschenone.com">hello@dominicschenone.com</a></p>
+</div>
+  </div>
+</footer>
 
 
 
 
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

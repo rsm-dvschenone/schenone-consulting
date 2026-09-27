@@ -1,14 +1,30 @@
 ---
 title: "Contact"
+subtitle: "Whether it's a website, a dashboard, a stubborn integration, or a pile of manual reporting you'd like to never touch again, a first conversation costs nothing."
 ---
 
-## Let's look at your data
+```{=html}
+<div class="contact-grid">
+  <div>
+    <p class="eyebrow">Start here</p>
+    <h2>Tell us what you're <em>working with.</em></h2>
+    <p class="lede">A few lines is plenty. You'll come away with a clear sense of what's possible and roughly what it would take, whether or not we end up working together.</p>
+    <ol class="checklist">
+      <li><div><strong>The systems you use today</strong>POS, CRM, accounting, spreadsheets, an existing website, whatever's in the mix.</div></li>
+      <li><div><strong>What you want to see, fix, or automate</strong>The question you can't answer, or the task that eats your week.</div></li>
+      <li><div><strong>Your timeline</strong>A hard deadline, or just "sooner is better."</div></li>
+    </ol>
+  </div>
 
-If you run an independent liquor store or smoke shop in the San Diego area and you're on a Clover or PAX system, reach out — a first conversation costs nothing, and it usually takes less than fifteen minutes to show you something in your own numbers you haven't seen before.
-
-<div class="contact-block">
-<strong>Email:</strong> <a href="mailto:hello@dominicschenone.com">hello@dominicschenone.com</a><br>
-<strong>Location:</strong> Ocean Beach, San Diego, CA
+  <div class="contact-card">
+    <p class="eyebrow">Email</p>
+    <a class="email" href="mailto:hello@dominicschenone.com">hello@dominicschenone.com</a>
+    <a class="btn-cta" href="mailto:hello@dominicschenone.com">Send an email</a>
+    <hr>
+    <p class="eyebrow">Based in</p>
+    <p>Ocean Beach, San Diego, CA<br>Remote clients welcome</p>
+  </div>
 </div>
+```
 
-<!-- hello@dominicschenone.com is a placeholder — swap for the real business inbox once set up (internal/docs/01-feasibility-and-startup-costs.md) -->
+<!-- hello@dominicschenone.com is a placeholder — swap for the real business inbox once set up (internal/docs/01-feasibility-and-startup-costs.md). Also used in _quarto.yml page-footer. -->
