@@ -1,5 +1,40 @@
 [
   {
+    "objectID": "work/closet-essentials/index.html",
+    "href": "work/closet-essentials/index.html",
+    "title": "Closet Essentials",
+    "section": "",
+    "text": "ClientCloset Essentials, Los Angeles stylist\nYear2026\nRoleDesign, full-stack build, product strategy\nStatusLive demo\n\n\n\nVisual identity and UI design\nFull-stack web app build\nSecurity review and fixes\nDeployment pipeline (CI and auto-deploy)\nProduct roadmap and blueprint\n\n\nNext.js\nTypeScript\nTailwind\nSupabase\nVercel\nGitHub Actions\n\n\n\nTry the live demo\nSee the blueprint"
+  },
+  {
+    "objectID": "work/closet-essentials/index.html#the-brief",
+    "href": "work/closet-essentials/index.html#the-brief",
+    "title": "Closet Essentials",
+    "section": "The brief",
+    "text": "The brief\nA working stylist runs her business out of a shared notes app and hundreds of Instagram DMs: client wardrobes, outfit planning, brand requests, loans to return, follow-ups to remember. She started with a narrow ask, a way to collect clients’ wardrobes, and a rough proof-of-concept. I took it from there to something she can put in front of clients."
+  },
+  {
+    "objectID": "work/closet-essentials/index.html#what-i-built",
+    "href": "work/closet-essentials/index.html#what-i-built",
+    "title": "Closet Essentials",
+    "section": "What I built",
+    "text": "What I built\nA private portal for every client. Clients photograph their pieces from their phone, and the wardrobe fills in as a gallery grid. Photos are resized in the browser before upload, so the grid stays fast. When the stylist composes an outfit, the client gets it back as an editorial lookbook page: the pieces in order, full-size, with a note on how to wear it.\nA composer for the stylist. Pick a client, tap pieces in the order they should appear, name the look, add a note, and preview it exactly as the client will see it.\nA visual identity that fits her world. Gallery-white and editorial, modeled on high-end stylist portfolios rather than generic software. There is no accent color, so the clothes carry all of it.\n\n\n\nLaunch the live demo\n\n\nSample data only, runs entirely in your browser · \nOpen in a new tab ↗\n\n\n\n\n\nThe stylist’s composer: pieces numbered in the order she picks them\n\n\n\n\n\nThe lookbook: a finished outfit, set like a magazine page\n\n\n\n\n\nThe client portal on a phone"
+  },
+  {
+    "objectID": "work/closet-essentials/index.html#what-i-fixed",
+    "href": "work/closet-essentials/index.html#what-i-fixed",
+    "title": "Closet Essentials",
+    "section": "What I fixed",
+    "text": "What I fixed\nThe original prototype’s admin tools were open to anyone who found the URL, including every client’s email address. I moved the stylist check onto the server and put it in front of every admin route, wrote row-level security so each client can only ever read and write their own data and their own photo folder, and upgraded the framework past a published security advisory.\nIt now ships through a proper pipeline: every change is build-checked on GitHub and deployed automatically, and a demo mode lets anyone use the full app on sample data with no account or backend."
+  },
+  {
+    "objectID": "work/closet-essentials/index.html#where-its-going",
+    "href": "work/closet-essentials/index.html#where-its-going",
+    "title": "Closet Essentials",
+    "section": "Where it’s going",
+    "text": "Where it’s going\nThe next phase turns the tool into a studio for the whole practice. I mapped it as a 30-screen product blueprint: spotting rising artists and tracking outreach, running brand requests in structured follow-up sequences, tracking gifted and loaned pieces, and sending brands a polished recap of every placement. The aim is for it to feel like her notes app got smarter, not like enterprise software.\n\n\n\n\nThe studio’s Today view: every follow-up, return and deadline in one list\n\n\n\n\n\nA moment hub: the brief, the looks, and the brand outreach board for one event\n\n\n\n\n\nThe recap a brand receives after a placement"
+  },
+  {
     "objectID": "approach.html",
     "href": "approach.html",
     "title": "Our Approach",
@@ -39,7 +74,7 @@
     "href": "work.html",
     "title": "Work",
     "section": "",
-    "text": "Offline\n      Website\n    \n    Schenone Farms\n    A marketing site for a family-owned cherry and walnut farm: the family story, where to find the harvest each weekend, private orders, and a photo gallery from the orchard.\n    \n    QuartoBootstrapJavaScriptGitHub PagesCustom domain\n    \n    \n    Read the case study\n    \n  \n\n  \n    \n    \n      In progress\n      Demo\n    \n    POS-to-warehouse pipeline\n    An automated pipeline that pulls sales, inventory, and cost data from a point-of-sale API, models it in Postgres, and feeds margin and inventory reporting.\n    \n    PythonREST APIPostgreSQLGitHub Actions\n    \n    \n    Write-up coming soon\n    \n  \n\n  \n    \n    \n      In progress\n      Demo\n    \n    Live BI dashboard\n    An interactive dashboard on a public dataset, showing the full path from raw source to defined metrics to a report people can actually use.\n    \n    SQLData modelingPower BI\n    \n    \n    Write-up coming soon\n    \n  \n\n  \n    \n    \n      \n      Open slot\n    \n    Your project here\n    Have a dashboard, integration, pipeline, or website that needs building? Early clients get a close, hands-on engagement and a fixed quote up front.\n    \n    \n    Start a conversation\n    \n  \n\n\nNo matching items"
+    "text": "Live demo\n      Client project\n    \n    Closet Essentials\n    Clients photograph their wardrobe from their phone and get finished outfits back as editorial lookbook pages. Redesigned, rebuilt, secured and shipped, with a 30-screen blueprint for the studio CRM that comes next.\n    \n    Next.jsTypeScriptTailwindSupabaseVercelGitHub Actions\n    \n    \n    Read the case study\n    \n  \n\n  \n    \n    \n    \n    \n      Offline\n      Website\n    \n    Schenone Farms\n    A marketing site for a family-owned cherry and walnut farm: the family story, where to find the harvest each weekend, private orders, and a photo gallery from the orchard.\n    \n    QuartoBootstrapJavaScriptGitHub PagesCustom domain\n    \n    \n    Read the case study\n    \n  \n\n  \n    \n    \n      In progress\n      Demo\n    \n    POS-to-warehouse pipeline\n    An automated pipeline that pulls sales, inventory, and cost data from a point-of-sale API, models it in Postgres, and feeds margin and inventory reporting.\n    \n    PythonREST APIPostgreSQLGitHub Actions\n    \n    \n    Write-up coming soon\n    \n  \n\n  \n    \n    \n      In progress\n      Demo\n    \n    Live BI dashboard\n    An interactive dashboard on a public dataset, showing the full path from raw source to defined metrics to a report people can actually use.\n    \n    SQLData modelingPower BI\n    \n    \n    Write-up coming soon\n    \n  \n\n  \n    \n    \n      \n      Open slot\n    \n    Your project here\n    Have a dashboard, integration, pipeline, or website that needs building? Early clients get a close, hands-on engagement and a fixed quote up front.\n    \n    \n    Start a conversation\n    \n  \n\n\nNo matching items"
   },
   {
     "objectID": "work/schenone-farms/index.html",
