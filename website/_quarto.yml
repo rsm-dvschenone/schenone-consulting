@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: ../docs
+  resources:
+    - styles.css
 
 website:
   title: "Schenone Consulting"
@@ -28,7 +30,6 @@ website:
 format:
   html:
     theme: darkly
-    css: styles.css
     toc: false
     page-layout: full
     anchor-sections: false

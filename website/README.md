@@ -18,6 +18,8 @@ quarto preview        # live-reloading local preview
 quarto render         # rebuild ../docs
 ```
 
+**If you changed `styles.css`, bump the `?v=` number in `fonts.html`** before rendering. The site sits behind Cloudflare, and browsers cache the stylesheet for 4 hours; without the bump, visitors see new pages with an old stylesheet.
+
 Then commit **both** `website/` (source) and `docs/` (output) and push. Pages only serves what's in `docs/` on `main`.
 
 Quarto prints a warning that it's "refusing to remove docs/site_libs". That's expected, because the output folder is outside the project, and it's harmless. It also means **deleted pages aren't cleaned out of `docs/` automatically**, so delete the stale `.html` by hand.
