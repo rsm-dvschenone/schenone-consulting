@@ -116,6 +116,12 @@ dig +short www.dominicschenone.com      # should show rsm-dvschenone.github.io
 - [ ] It looks right on a phone
 - [ ] The contact email works (see below)
 
+### Domain verified on GitHub ✅ 2026-09-27
+
+`dominicschenone.com` is verified on the `rsm-dvschenone` account (profile → Settings → Pages), so no other GitHub account can publish Pages on it. **Keep this TXT record in Cloudflare permanently:** `_github-pages-challenge-rsm-dvschenone` → `fd06b389d85e9748cb8366acf6489b`.
+
+HTTPS is served by Cloudflare's proxy (orange cloud on the site's A/`www` records), so GitHub's "Enforce HTTPS" box stays off. That's expected.
+
 ### Business email ✅ set up 2026-09-27
 
 Microsoft 365 through GoDaddy. The mailbox is `dominic@dominicschenone.com`, and **`info@dominicschenone.com` is an alias** on it (free, same inbox). The site shows `info@`, in `contact.qmd` and the footer in `_quarto.yml`. Sign-in is federated to GoDaddy (`sso.godaddy.com`), with Duo for two-factor auth.
