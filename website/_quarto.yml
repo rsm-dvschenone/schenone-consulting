@@ -17,6 +17,8 @@ website:
         text: Home
       - href: services.qmd
         text: Services
+      - href: work.qmd
+        text: Work
       - href: approach.qmd
         text: Approach
       - href: about.qmd

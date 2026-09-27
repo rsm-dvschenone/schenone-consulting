@@ -1,0 +1,35 @@
+---
+title: "Work"
+subtitle: "Selected projects and builds. Client case studies are published with permission; demos are built on public or synthetic data and labeled as such."
+---
+
+```{=html}
+<div class="work-grid">
+  <div class="work-card">
+    <div class="work-meta"><span class="status">In progress</span><span class="kind">Demo</span></div>
+    <h3>POS-to-warehouse pipeline</h3>
+    <p>An automated pipeline that pulls sales, inventory, and cost data from a point-of-sale API, models it in Postgres, and feeds margin and inventory reporting.</p>
+    <div class="chips"><span>Python</span><span>REST API</span><span>PostgreSQL</span><span>GitHub Actions</span></div>
+    <p class="work-soon">Write-up coming soon</p>
+  </div>
+
+  <div class="work-card">
+    <div class="work-meta"><span class="status">In progress</span><span class="kind">Demo</span></div>
+    <h3>Live BI dashboard</h3>
+    <p>An interactive dashboard on a public dataset, showing the full path from raw source to defined metrics to a report people can actually use.</p>
+    <div class="chips"><span>SQL</span><span>Data modeling</span><span>Power BI</span></div>
+    <p class="work-soon">Write-up coming soon</p>
+  </div>
+
+  <a class="work-card work-open" href="contact.html">
+    <div class="work-meta"><span class="kind">Open slot</span></div>
+    <h3>Your project here</h3>
+    <p>Have a dashboard, integration, pipeline, or website that needs building? Early clients get a close, hands-on engagement and a fixed quote up front.</p>
+    <span class="more-link">Start a conversation</span>
+  </a>
+</div>
+```
+
+<!-- Adding a project: copy a .work-card block. For a full case study, create work/<slug>.qmd
+     (Problem / What we built / Result / visual) and turn the card into an <a class="work-card" href="work/<slug>.html">.
+     Client work needs written permission or anonymization. Nothing from Avantus/EDF. -->

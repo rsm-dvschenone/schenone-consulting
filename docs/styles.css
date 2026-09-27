@@ -628,6 +628,59 @@ h1 em, h2 em {
 .note-panel h3 { font-size: 1.02rem; font-weight: 600; margin-bottom: 0.4rem; }
 .note-panel p { margin: 0; font-size: 0.95rem; }
 
+/* ---------- work (work.qmd) ---------- */
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.1rem;
+  margin-bottom: clamp(3rem, 6vw, 4.5rem);
+}
+.work-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.8rem 1.7rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: inherit;
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+.work-card:hover { transform: translateY(-4px); border-color: var(--line-2); color: inherit; }
+.work-card h3 { font-size: 1.2rem; font-weight: 600; letter-spacing: -0.03em; margin: 0 0 0.55rem 0; }
+.work-card > p { font-size: 0.93rem; margin: 0 0 1.1rem 0; }
+.work-meta { display: flex; gap: 0.45rem; margin-bottom: 1.2rem; }
+.work-meta span {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  padding: 0.22rem 0.55rem;
+  border-radius: 6px;
+  border: 1px solid var(--line-2);
+  color: var(--text-2);
+}
+.work-meta .status {
+  color: #febc2e;
+  border-color: rgba(254, 188, 46, 0.35);
+  background: rgba(254, 188, 46, 0.07);
+}
+.work-meta .status::before { content: "● "; }
+.work-card .chips { margin-bottom: 1.2rem; }
+.work-soon {
+  margin: auto 0 0 0 !important;
+  padding-top: 1rem;
+  border-top: 1px dashed var(--line-2);
+  font-family: var(--mono);
+  font-size: 0.78rem !important;
+  color: var(--muted);
+}
+.work-open {
+  border-style: dashed;
+  border-color: rgba(62, 230, 193, 0.35);
+  background: linear-gradient(180deg, rgba(62, 230, 193, 0.05), transparent 60%), var(--surface);
+}
+.work-open:hover { border-color: var(--accent); }
+.work-open .work-meta span { color: var(--accent); border-color: rgba(62, 230, 193, 0.35); }
+.work-open .more-link { margin-top: auto; color: var(--accent); }
+
 /* ---------- approach: comparison table ---------- */
 .compare {
   border: 1px solid var(--line);
@@ -825,6 +878,7 @@ h1 em, h2 em {
   .steps,
   .ruled,
   .plans,
+  .work-grid,
   .facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .step::after { display: none; }
   .service-row { grid-template-columns: 3rem minmax(0, 1fr); }
@@ -838,6 +892,7 @@ h1 em, h2 em {
   .ruled,
   .ruled.two,
   .plans,
+  .work-grid,
   .facts { grid-template-columns: minmax(0, 1fr); }
   .service-row { grid-template-columns: minmax(0, 1fr); }
   .service-row > div:last-child { grid-column: auto; }

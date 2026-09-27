@@ -79,7 +79,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=Geist+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
 <meta name="theme-color" content="#06080c">
 <!-- Bump ?v= whenever styles.css changes so browsers and Cloudflare fetch the new file -->
-<link rel="stylesheet" href="styles.css?v=2026092701">
+<link rel="stylesheet" href="styles.css?v=2026092702">
 
 
 <meta property="og:title" content="About – Schenone Consulting">
@@ -118,6 +118,10 @@ ul.task-list li input[type="checkbox"] {
   <li class="nav-item">
     <a class="nav-link" href="./services.html"> 
 <span class="menu-text">Services</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./work.html"> 
+<span class="menu-text">Work</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./approach.html"> 
@@ -219,7 +223,7 @@ ul.task-list li input[type="checkbox"] {
     if (!("IntersectionObserver" in window)) return;
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     var targets = document.querySelectorAll(
-      ".section-head, .ruled, .steps > *, .service-row, .plan, .viz-card, .compare, .terminal, .cta-panel, .about-grid, .quote, .facts, .contact-grid > *"
+      ".section-head, .ruled, .work-card, .steps > *, .service-row, .plan, .viz-card, .compare, .terminal, .cta-panel, .about-grid, .quote, .facts, .contact-grid > *"
     );
     document.documentElement.classList.add("js-reveal");
     var io = new IntersectionObserver(function (entries) {
