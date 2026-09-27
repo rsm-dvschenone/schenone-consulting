@@ -68,7 +68,7 @@ git commit -m "Reposition site: web, BI & data engineering; full visual redesign
 ### Step 4: Rename and set visibility (on your personal account)
 
 1. Open the transferred repo → **Settings → General → Repository name**. Rename it to something like `schenone-consulting` (it holds the whole business, not just the site).
-2. In the **Danger Zone**, change visibility to **Private** (Pro required to keep Pages running; see step 0).
+2. **Current decision (2026-09-26): leave it Public for now** (free plan). Everything in the repo, `internal/docs/` included, is visible to anyone. To lock it down later, upgrade to Pro, then change visibility in the **Danger Zone** to **Private**. Pages keeps running, but anything already cloned stays out there.
 
 ### Step 5: Push this repo over the old content
 
