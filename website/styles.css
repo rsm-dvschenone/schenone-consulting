@@ -961,6 +961,19 @@ h1 em, h2 em {
 .contact-card .email:hover { color: var(--accent); }
 .contact-card hr { border-color: var(--line); opacity: 1; margin: 1.6rem 0; }
 .contact-card p { margin: 0; }
+.contact-card .card-lede { color: var(--text-2); font-size: 0.95rem; margin: 0 0 1.1rem; }
+
+/* Tally intake form: Tally renders dark text, so it sits on a light sheet */
+.form-frame {
+  margin-top: 1.6rem;
+  padding: 0.9rem 1.2rem 0.4rem;
+  border-radius: var(--radius);
+  background: #f7f8fa;
+  border: 1px solid var(--line-2);
+  box-shadow: var(--shadow);
+}
+.form-frame iframe { display: block; width: 100%; border: 0; min-height: 420px; }
+.form-alt { margin: 0.7rem 0 0; font-family: var(--mono); font-size: 0.74rem; color: var(--muted); }
 
 /* ---------- inline data-viz (approach.qmd) ---------- */
 .viz-card {
